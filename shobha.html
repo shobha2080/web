@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+
+<head><title>shobha</title></head>
+
+<style>
+
+li::before{
+
+content: "";
+
+background-color: rgb(255, 35, 174);
+
+position: absolute;
+
+left:0;
+
+bottom: -0.3rem;
+
+height: 3px;
+
+width: 0;
+
+transition: 0.3s ease-in-out;
+
+}
+
+li{
+
+list-style: none;
+
+position: relative;
+
+cursor: pointer;
+
+
+
+}
+
+li:hover::before{
+
+content: "";
+
+background-color: Irgb(255, 35, 174);
+
+position: absolute;
+
+left:0;
+
+bottom:-0.3rem;
+
+height: 3px;
+
+width: 100%;
+
+}
+
+</style>
+
+<body>
+
+<div class="image-container">
+
+<img src="images/m4.jpg">
+
+<div class="overlay">
+
+<p class="image-text">Beautiful Image</p>
+
+</body>
+
+</html>

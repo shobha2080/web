@@ -1,0 +1,172 @@
+ <!doctype html>
+
+<html>
+
+<head><title>form</title></head>
+
+<style>
+
+#bg
+{
+width:100%;
+height:970px;
+margin-top:-8px;
+margin-left:-8px;
+position:fixed;
+z-index:-3;
+}
+
+#main{
+text-align:center;
+background:black;
+width:60%;
+//margin:auto;
+box-shadow:5px 5px 25px white;
+padding:20px;
+border-radius:0px;
+opacity:0.50;
+border-radius:5%;
+}
+
+table{width:60%;margin:auto;}
+input[type=text],[type=name]{width:100%;height:30px;border-radius:10px;font-size:15px;}
+input[type=text],[type=email]{width:100%;height:30px;border-radius:10px;font-size:15px;color:black;}
+
+input[type=submit],[type="reset"]{width:50%;height:30px;color:white;}
+</style>
+
+<body>
+
+<img id="bg" src="images/bul.jpg">
+
+  <div id="main">
+ <table border="0" cellpadding="20">
+
+ <caption style="font-size:40px;padding:10px;color:white;"><b>Registration Form</b></caption>
+
+
+ <form action="http://tataplay/user/login.php"method="get">
+
+
+  <tr>                                         
+<td style="font-size:20px;color:white;"><label>First Name</lable></td>
+<td><input type="text" placeholder="Type name" pattern="[a-z,A-Z]{1-15}" title="Name 1-15 char." required></td>
+</tr>  
+
+ <tr>                                         
+<td style="font-size:20px;color:white;"><label>Last Name</lable></td>
+<td><input type="text" placeholder="Type name" pattern="[a-z,A-Z]{1-15}" title="Name 1-15 char." required></td>
+</tr>
+
+                                                                                                                
+
+
+
+<tr>
+ <td style="font-size:20px;color:white;"><lable>E-mail</lable></td>
+
+ <td><input type="email" placeholder="type last name" title="type last name" required></td>
+ </tr>
+
+
+<tr>
+ <td style="font-size:20px;color:white;"><lable>DOB</lable></td>
+ <td style="color:white;"><input type="date" placeholder="type DOB" title="type dob" required></td>
+
+ </tr>
+
+<tr>
+<td style="font-size:20px;color:white;"><lable>Age</lable></td>
+<td style="color:white;"><input type="number" placeholder="type age"  min="10" max="50" title="type age" required></td>
+
+ </tr>
+
+
+<tr>
+ <td style="font-size:20px;color:white;"><lable>Address</lable></td>
+
+ <td><input type="text" placeholder="type address" title="type address" required></td>
+ </tr>
+
+
+<tr style="color:white;">
+ <td ><lable>Country</lable></td>
+
+ <td >
+   <select color:white;>
+    <option color:white; value="india">india</option>
+    <option color:white; value="USA">usa</option>
+    <option color:white; value="UK">uk</option>
+    <option color:white; value="australia">australia</option>
+    <option color:white; value="japan">japan</option>
+
+
+</td>
+
+ </tr>
+
+
+
+
+
+
+
+
+<tr>
+ <td style="font-size:20px;color:white;"><lable>Message</lable></td>
+
+ <td>
+
+<textarea cols="30" row="10">type text here</textarea>
+
+</td>
+ </tr>
+
+<tr style="color:white;">
+ <td><lable>Upload File</lable></td>
+
+ <td><input type="file" required></td>
+ </tr>
+
+<tr>
+ <td style="font-size:20px;color:white;"><lable>Gender</lable></td>
+
+ <td style="color:white;">
+
+Male<input type="radio"  value="male" name="gender"  required>
+Female<input type="radio" value="female" name="gender"  required>
+Other<input type="radio"  value="other" name="gender"  required>
+
+</td>
+ </tr>
+
+
+
+<tr>
+ <td style="font-size:20px;color:white;"><lable>Hobby</lable></td>
+
+ <td style="color:white;">
+
+Reading<input type="checkbox" value="reading" name="hobby1">
+Writing<input type="checkbox" checked value="Writing" name="hobby2"  >
+Dancing<input type="checkbox" value="Dancing" name="hobby3"  >
+cooking<input type="checkbox" value="cooking" name="hobby4"  >
+
+</td>
+ </tr>
+
+
+
+
+ <tr>
+
+<td></td>
+
+ <td><input type="submit" style="color:black;" value="Login"><input type="reset" style="color:black;"></td>
+
+ </tr>
+
+</div>
+</body>
+
+</html>

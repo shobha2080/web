@@ -1,0 +1,35 @@
+Linear Gradients (goes down/up/left/right/diagonally)
+
+Radial Gradients (defined by their center)
+
+Conic Gradients (rotated around a center point)
+
+background-image: linear-gradient(to right, rgba(255,0,0,0),
+
+background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+
+background-image: conic-gradient(red, yellow, green);
+
+background-image: conic-gradient(red, yellow, green, blue, black);
+
+background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+
+// CIRCULAR
+
+background-image: conic-gradient(red, yellow, green, blue, black);
+
+border-radius: 50%;
+
+// PATTERN
+
+background-image: repeating-conic-gradient(red 10%, yellow 20%);
+
+border-radius: 50%;
+
+// RADIAL
+
+background-image: radial-gradient(red, yellow, green);
+
+background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+
+background-image: repeating-radial-gradient(red, yellow 10%, green 15%);

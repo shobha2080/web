@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head><title>animation</title></head>
+
+<a href="index.html">
+<img src="images/home.png" width="3%" style="margin-left:95%;display:block;margin-bottom:10px;">
+</a>
+
+<style>
+@keyframes runbanner
+{
+30%{background-image:url(images/b22.gif);}
+20%{background-image:url(images/b11.gif);}
+60%{background-image:url(images/b33.gif);}
+70%{background-image:url(images/b44.gif);}
+90%{background-image:url(images/b55.gif);}
+40%{background-image:url(images/b66.gif);}
+50%{background-image:url(images/b77.gif);}
+}
+
+#text{
+color:#49243E;
+font-family:arial black;
+text-align:center;
+text-shadow:3px 3px 3px gray;
+
+
+}
+
+#banner{
+width:80%;
+height:600px;
+box-shadow:10px 10px 10px gray;
+margin:auto;
+background-image:url(images/ani1.jpg);
+background-size:100% 100%;
+animation:runbanner 20s infinite;
+}
+</style>
+<body>
+<h1 id="text">Beauty Products</h1>
+<hr/>
+
+  <div id="banner"></div>
+</body>
+</html>

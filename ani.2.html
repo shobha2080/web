@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+
+<head><title>box animation</title></head>
+
+<style>
+
+@keyframes changecolor
+{
+10%{background:#7469B6;left:1500px;top:20px;transform:scale(1)}
+20%{background:#AD88C6;left:1500px;top:500px;}
+30%{background:#E1AFD1;left:1500px;top:500px;}
+40%{background:#CDE8E5;left:20px;top:500px;}
+50%{background:#7AB2B2;left:20px;top:500px;}
+60%{background:#4D869C;left:20px;top:550px;}
+70%{background:#153448;left:20px;top:20px;}
+80%{background:#3C5B6F;transform:rotate(0deg)}
+90%{background:#49243E;left:20px;top:20px;transform:rotate(360deg)}
+100%{background:#704264;left:20pxpx;top:20px;transform:scale(2)}
+}
+
+#box{
+width:400px;
+height:400px;
+box-shadow:10px 10px 10px gray;
+background:teal;
+position:absolute;
+left:20px;
+top:20px;
+border-radius:20px;
+animation:changecolor 5s infinite alternate
+}
+
+</style>
+
+<body>
+
+
+
+<div id="box">
+
+</div>
+
+</body>
+
+</html>

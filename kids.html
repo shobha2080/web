@@ -1,0 +1,638 @@
+<!doctype html>
+
+<html>
+
+<head><title>kids</title></head>
+
+<meta name="viweport" content="width,initiak-scale=1.0">
+
+<style>
+
+*{
+  font-family: helvetica;
+ transition: 0.5s ease-in-out;
+}
+html{
+  scroll-behavior: smooth;
+  transition: 8s;
+  animation:opacity 3s;
+}
+
+@keyframes opacity{
+from{opacity:0%;}
+to{opacity:100%;}
+
+}
+
+
+#first2
+{
+width:100%;
+height:70px;
+background:#F7F9F2;
+margin-top:-60px;
+position:fixed;
+z-index;
+display:flex;
+justify-content:space-between;
+//flex-wrap:wrap;
+}
+
+#logo
+{
+width:15%;
+height:70px;
+//background:red;
+//margin-left:90px;
+}
+
+
+#logoimg{
+width:100%;
+margin-top:15px;
+}
+
+
+#menu
+{
+width:55%;
+height:70px;
+//background:yellow;
+//margin-left:500px;
+//margin-top:-80px;
+
+
+}
+
+#bar
+{
+width:auto;
+height:20px;
+//background:pink;
+margin:30px;
+//margin-top:30px;
+float:left; 
+cursor:pointer;
+text-align:center;
+
+}
+
+
+#iii{
+font-size:16px;
+color:black;
+text-decoration:none;
+text-align:center;
+margin-left:20px;
+margin-top:10px;
+}
+
+
+#iii:hover
+{
+color:gray;
+//font-size:20px;
+}
+
+#search
+{
+width:15%;
+height:35px;
+//margin-left:1380px;
+margin-top:15px;
+//border-radius:10px;
+//background:red;
+}
+
+
+#icon{
+width:30px;
+height:30px;
+//background:pink;
+margin-top:15px;
+}
+
+
+#iconimg{
+width:30px;
+height:30px;
+transition:1.0s;
+}
+
+#iconimg:hover
+{
+transform:scale(1.30);
+//border:1px black solid ;
+}
+
+#blank{
+width:2%;
+height:70px;
+//background:cyan;
+}
+
+
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:50px;
+}
+
+
+#container{
+width:95%;
+height:520px;
+margin:auto;
+margin-top:50px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:21%;
+height:520px;
+box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+//margin-top:-78px;
+//border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:380px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+}
+
+
+#hed{
+margin-left:3%;
+font-size:20px;
+}
+
+.card
+{
+width:21%;
+height:520px;
+//margin-top:10px;
+transition:0.40s;
+}
+
+.card:hover
+{
+transform:scale(1.03);
+border:2px solid black;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  body{
+      //background:yellow;
+   }
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:30px;
+}
+
+
+#container{
+width:95%;
+height:800px;
+margin:auto;
+//margin-top:-30px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:45%;
+height:330px;
+//box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+margin-top:-78px;
+//border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:200px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+margin-top:-4%;
+}
+
+#hed{
+margin-left:3%;
+font-size:15px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+ body{
+      //background:green;
+   }
+
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:35px;
+}
+
+#container{
+width:95%;
+height:800px;
+margin:auto;
+margin-top:50px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:45%;
+height:370px;
+//box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+margin-top:-50px;
+//border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:250px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+margin-top:-4%;
+}
+
+#hed{
+margin-left:3%;
+font-size:18px;
+}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+ body{
+      //background:red;
+   }
+
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:40px;
+}
+
+#container{
+width:95%;
+height:800px;
+margin:auto;
+margin-top:50px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:30%;
+height:370px;
+//box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+//margin-top:-78px;
+//border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:250px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+margin-top:-4%;
+}
+
+#hed{
+margin-left:3%;
+font-size:20px;
+}
+
+
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+body{
+      //background:cyan;
+   }
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:50px;
+}
+
+
+#container{
+width:95%;
+height:520px;
+margin:auto;
+margin-top:50px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:21%;
+height:520px;
+//box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+margin-top:0px;
+//border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:380px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+margin-top:3%;
+}
+
+#hed{
+margin-left:3%;
+font-size:20px;
+}
+
+
+}
+
+</style>
+
+
+
+<body>
+
+<div id="first2">
+
+<div id="logo">
+<img id="logoimg" src="web/w22.png" alt="logo">
+</div>
+
+<div id="menu">
+<div id="bar"><a href="shoesmain.html" id="iii">Home</a></div>
+<div id="bar"><a href="men.html" id="iii">Men</a></div>
+<div id="bar"><a href="women.html" id="iii">Women</a></div>
+<div id="bar"><a href="kids.html" id="iii">Kids</a></div>
+<div id="bar"><a href="sales.html" id="iii">Sale</a></div>
+<div id="bar"><a href="snker.html" id="iii">Snkrs</a></div>
+
+</div>
+
+<div id="search">
+<input type="text" style="width:100%;height:25px;border-radius:10px;" placeholder="search"required>
+</div>
+
+
+<div id="icon"><a href="#"><img id="iconimg" src="web/i2.png" alt="logo"></a></div>
+<div id="icon"><a href="addcard.html"><img id="iconimg" src="web/i3.png" alt="logo"></a></div>
+<div id="icon"><a href="login.html"><img id="iconimg" src="web/i4.png" alt="logo"></a></div>
+
+<div id="blank"></div>
+</div>
+
+
+<div id="container">
+  
+  <div class="card"><img src="web/k1.jpg "class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">ERUPTERS IV</li>
+  <li>₹3,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="web/k2.jpg"class="pic">
+
+  <ol class="info">
+  <li style="font-size:20px;">DEPTH CHARGE 2.0-DOUBLE POINT </li>
+  <li>₹2,099</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+
+  <div class="card"><img src="web/k3.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">RAZOR FLEX AIR </li>
+  <li>₹4,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="web/k4.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">SKECH-AIR AIRMATIC</li>
+  <li>₹4,685</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+</div>
+ 
+<div id="hed">
+  <h1></h1>
+</div>
+
+<div id="container">
+
+  <div class="card"><img src="web/k5.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">MICROSPEC MAX PLUS  </li>
+  <li>₹3,049</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+  </div>
+
+  <div class="card"><img src="web/k6.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">ERUPTERS IV  </li>
+  <li>₹2,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+  </div>
+
+  <div class="card"><img src="web/k7.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">GAMETRONIX</li>
+  <li>₹2,800</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="web/k8.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">SKECH-AIR AIRMATIC</li>
+  <li>₹4,260</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+</div>
+
+<div id="hed">
+  <h1></h1>
+</div>
+
+<div id="container">
+
+  <div class="card"><img src="web/k9.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">ULTRA FLEX-YOU ARE YOU</li>
+  <li>₹4,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="web/k10.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">SKECH POPS BLAST</li>
+  <li>₹3,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="web/k11.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">DYNA-LITE</li>
+  <li>₹5,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="web/k12.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">BRICK KICKS 2</li>
+  <li>₹5,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  
+
+
+ 
+ 
+
+</div>
+
+</body>
+
+</html>

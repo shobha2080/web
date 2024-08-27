@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html>
+
+<head><title>banner</title>
+
+<meta name="viweport" content="widt=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+
+body{
+
+margin-top:0px;
+
+}
+@keyframes ani1
+{
+9%{left:0%}
+18%{left:-15%}
+27%{left:-15%}
+36%{left:-30%}
+45%{left:-30%}
+54%{left:-45%}
+63%{left:-45%}
+72%{left:-60%}
+81%{left:-60%}
+90%{left:-75%}
+100%{left:-75%}
+}
+
+#manu
+{
+width:100%;
+height:40PX;
+
+}
+
+#col{
+width:auto;
+height:auto;
+margin:10px;
+float:left;
+cursor:pointer;
+}
+
+#banner
+{
+width:680%;
+box-shadow:5px 5px 5px gray;
+height:600px;
+margin-top:0px;
+}
+
+.pic
+{
+width:15%;
+height:600px;
+position:relative;
+margin-left:-3px;
+animation:ani1 10s ease-out infinite alternate;
+}
+
+#card
+{
+width:100%;
+height:300px;
+margin-top:10px;
+}
+
+#fam{
+width:300px;
+height:300px;
+
+margin:10px;
+float:left;
+
+}
+
+.picstyle
+{border-radius:10%;
+cursor:pointer;
+transition:1.0s;
+
+}
+
+.picstyle:hover
+{
+transform:scale(1.20) ;
+box-shadow:5px 5px 25px white;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  body{
+      //background:yellow;
+   }
+   #banner{
+           height:150px;
+    }
+    .pic{height:150px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+ body{
+      //background:green;
+   }
+#banner{
+           height:250px;
+    }
+    .pic{height:250px;}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+ body{
+      //background:red;
+   }
+   #banner{
+           height:350px;
+    }
+    .pic{height:350px;}
+
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+body{
+      //background:cyan;
+   }
+#banner{
+           height:600px;
+    }
+    .pic{height:600px;}
+}
+
+
+
+</style>               
+         
+<body bgcolor="black"> 
+      
+<div id="manu">
+
+ <div id="col" style="color:white;"><b> ABOUT</b> </div>
+   
+ <div id="col" style="color:white;"><b> WORKOUTS <b></div>
+  
+ <div id="col" style="color:white;"><b> TRAINER </b></div>
+   
+ <div id="col" style="color:white;"> <b>PRICE </b> </div>
+   
+ <div id="col" style="color:white;"> <b>REVIEWS </b></div>
+
+
+</div>
+
+            
+<div id="banner">
+
+<img class="pic" src="images/g2.jpg">
+<img class="pic" src="images/g3.jpg">
+<img class="pic" src="images/g1.jpg">
+<img class="pic" src="images/g5.jpg">
+<img class="pic" src="images/g4.jpg">
+<img class="pic" src="images/g6.jpg">
+
+</div>
+
+<div id="card">
+  <div id="fam"><img class="picstyle"src="images/c3.jpg"> </div>
+  <div id="fam"> <img class="picstyle"src="images/c4.jpg"> </div>
+  <div id="fam"> <img class="picstyle"src="images/c1.jpg"> </div>
+  <div id="fam"> <img class="picstyle"src="images/c2.jpg"> </div>
+  <div id="fam"> <img class="picstyle"src="images/c5.jpg"> </div>
+  <div id="fam"> <img class="picstyle"src="images/c3.jpg"> </div>
+
+</div>
+ 
+
+</body>
+
+</html>

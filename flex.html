@@ -1,0 +1,494 @@
+<!doctype html>
+
+<html>
+
+<head><title>flex</title></head>
+
+<meta name="viweport" content="width,initiak-scale=1.0">
+
+<style>
+
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:50px;
+}
+
+
+#container{
+width:95%;
+height:520px;
+margin:auto;
+//margin-top:-30px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:21%;
+height:520px;
+box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+//margin-top:-78px;
+border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:380px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+}
+
+
+#hed{
+margin-left:3%;
+font-size:20px;
+}
+
+.card
+{
+width:21%;
+height:520px;
+//margin-top:10px;
+transition:0.40s;
+}
+
+.card:hover
+{
+transform:scale(1.03)
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  body{
+      //background:yellow;
+   }
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:30px;
+}
+
+
+#container{
+width:95%;
+height:800px;
+margin:auto;
+//margin-top:-30px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:45%;
+height:330px;
+box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+margin-top:-78px;
+border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:200px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+margin-top:-4%;
+}
+
+#hed{
+margin-left:3%;
+font-size:15px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+ body{
+      //background:green;
+   }
+
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:35px;
+}
+
+#container{
+width:95%;
+height:800px;
+margin:auto;
+//margin-top:-30px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:45%;
+height:370px;
+box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+margin-top:-50px;
+border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:250px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+margin-top:-4%;
+}
+
+#hed{
+margin-left:3%;
+font-size:18px;
+}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+ body{
+      //background:red;
+   }
+
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:40px;
+}
+
+#container{
+width:95%;
+height:800px;
+margin:auto;
+//margin-top:-30px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:30%;
+height:370px;
+box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+//margin-top:-78px;
+border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:250px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+margin-top:-4%;
+}
+
+#hed{
+margin-left:3%;
+font-size:20px;
+}
+
+
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+body{
+      //background:cyan;
+   }
+#title
+{
+width:100%;
+margin:auto;
+//background:pink;
+text-align:center;
+font-size:50px;
+}
+
+
+#container{
+width:95%;
+height:520px;
+margin:auto;
+//margin-top:-30px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-between;
+//background:blue;
+}
+
+.card{
+width:21%;
+height:520px;
+box-shadow:10px 10px 10px gray;
+text-align:center;
+background:white;
+margin-top:0px;
+border:2px solid black;
+}
+
+.pic{
+width:90%;
+height:380px;
+margin:7px;
+}
+
+.info{
+margin-left:5%;
+list-style:none;
+padding:0px;
+text-align:left;
+margin-top:3%;
+}
+
+#hed{
+margin-left:3%;
+font-size:20px;
+}
+
+
+}
+
+</style>
+
+
+
+<body style="backround:black;">
+
+<div id="title">
+
+<h1>Watches</h1>
+</div>
+
+<div id="hed">
+
+<h1 >Man's collection</h1>
+</div>
+
+<div id="container">
+  
+  <div class="card"><img  src="images/m1.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">SEGER 1309 Wrist Watch </li>
+  <li>₹7,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="images/m2.png"class="pic">
+
+  <ol class="info">
+  <li style="font-size:20px;">Omega Seamaster Diver 300M </li>
+  <li>₹4,82,500</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+
+  <div class="card"><img src="images/m3.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">DREALEX Curren Branded </li>
+  <li>₹4,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="images/m4.jpg"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">Wwmall- Big Daddy </li>
+  <li>₹1,685.00</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+</div>
+ 
+<div id="hed">
+  <h1>Women's collection</h1>
+</div>
+
+<div id="container">
+
+  <div class="card"><img src="images/m5.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">Movado </li>
+  <li>₹1,049.00</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+  </div>
+
+  <div class="card"><img src="images/m6.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;"> Analog Black Dial Crystal Glass </li>
+  <li>₹5,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+  </div>
+
+  <div class="card"><img src="images/m7.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">Rev Black  </li>
+  <li>₹1,800.00</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="images/m8.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">Calvin Klein  </li>
+  <li>₹7,260</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+</div>
+
+<div id="hed">
+  <h1>Popular unisex collection</h1>
+</div>
+
+<div id="container">
+
+  <div class="card"><img src="images/m9.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">Rolex Submariner</li>
+  <li>₹9,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="images/m10.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">Orbis Mundi</li>
+  <li>₹30,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="images/m11.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">Ulysse Nardin </li>
+  <li>₹50,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  <div class="card"><img src="images/m12.png"class="pic">
+  <ol class="info">
+  <li style="font-size:20px;">Traser P 6600 Shade </li>
+  <li>₹9,468</li>
+  <li><button style="cursor:pointer;padding:10px;color:black;">Add to cart</button>
+  <button style="cursor:pointer;padding:10px;color:black;">Buy now</button>
+  </li>
+  </ol>
+
+  </div>
+
+  
+
+
+ 
+ 
+
+</div>
+
+</body>
+
+</html>

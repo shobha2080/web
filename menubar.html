@@ -1,0 +1,74 @@
+
+
+<!doctype html>
+<html>
+<head>
+<title>menu</title>
+
+</head>
+<style>
+nav
+{
+background:gray;
+display:inline-block;
+height:20px;
+padding:2px;
+}
+
+
+
+nav #menu ol li{transition:0.50s;margin-left:-300px;padding:15px;list-style:none;
+background: #004466;width:100px;text-align:center;
+box-shadow:10px 10px 10px gray;
+border-bottom:1px solid black;cursor:pointer;
+margin-top:-15px;
+}
+
+nav #menu
+{
+//background:red;
+height:20px;
+
+overflow:hidden;
+
+}
+
+nav #menu:hover
+{
+overflow:visible;
+//background:green;
+}
+
+
+nav #menu:hover ol li{transition:0.50s;margin-left:-40px;
+}
+a:link{color:white;}
+a:visited{color:white;}
+
+
+nav #menu ol li:hover{background:#33bbff;}
+</style>
+
+<body>
+
+<nav>
+
+	<div id="menu">Menu
+		
+				<ol>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">service</a></li>
+					<li><a href="#">product</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Photo Gallery</a></li>
+				</ol>
+	 
+	
+
+</div>
+
+</nav>
+
+
+
+</html>
