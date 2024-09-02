@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var p = document.createElement("img")
+document.body.appendChild(p)
+p.src="images/a3.jpg"
+p.style = "opacity:0.70;transition:0.50s;coursor:zoom-in;margin:auto;display:block;margin-top:100px;box-shadow:10px 10px 10px gray; width:400px;"
+
+var r = 0
+p.onwheel = function(event)
+{
+r = Math.round(event.deltaY)
+
+
+if((event.deltaY == 108)||(r == 100))
+{
+    this.style.transform="scale(1.5)"
+    this.style.opacity="1"
+}
+
+if((event.deltaY == -108)||(r == -100))
+{
+    this.style.transform="scale(1)"
+    this.style.opacity="0.70"
+}
+
+}
+
+    </script>
+    
+</body>
+</html>

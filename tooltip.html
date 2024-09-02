@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .pic{
+    width:500px;
+    height:300px;
+    display:block;
+    margin:100px auto 100px;
+  } 
+  
+  .pic2{
+   box-shadow:10px 10px 10px gray;
+   border:3px black ridge;
+   coursor:pointer; 
+
+  }  
+</style>
+
+<body>
+  <span id="about" style="color:blue;padding:20px;font-size:30px;transition: 0.52s; font-family:arial black;position:absolute; top:-400px;left:500;">
+
+    T20 WORLD CUP 
+  </span>
+
+    <img id="mypic" src="images/a1.jpg" class="pic">
+    <script>
+         window.document.title="ready"
+     var d = document.getElementById("mypic")
+     var tooltip = document.getElementById("about")
+     
+      mypic.onmouseover= function()
+      {
+        tooltip.style.left="840px"
+        tooltip.style.zIndex="100"
+        tooltip.style.top="200px"
+        d.style.filter="blur(3px)"
+       
+      }
+
+      tooltip.onmouseover= function()
+      {
+        tooltip.style.left="840px"
+        d.style.filter="blur(3px)"
+        tooltip.style.top="200px"
+        
+       
+      }
+      
+      mypic.onmouseout=function()
+      {
+        tooltip.style.left="840px"
+        d.style.filter="blur(0px)"
+        tooltip.style.top="-200px"
+      }
+
+      
+
+
+       
+    </script>
+</body>
+</html> 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        width: 200px;
+        background: gray;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px black;
+        top:-300px;
+        position:relative;
+        transform:0.50s; 
+    }
+
+     
+</style>
+<body>
+ <div id="box">
+    color<span id="message">
+       Color Slider </span>
+       <input type="range" id="red" value="0" min="1" max="255">
+       <input type="range" id="blue" value="0" min="1" max="255">
+       <input type="range" id="green" value="0" min="1" max="255">
+
+ </div>
+ 
+ <div style="height:50px"></div>
+  <button onclick="show()">set background color</button>
+
+
+<script>
+    var kyaboxuperhai = "ha"
+    var box = document.getElementById("box")
+    var r = document.getElementById("red")
+    var g = document.getElementById("green")
+    var b = document.getElementById("blue")
+
+    var redcolor = 40
+    var greencolor = 40
+    var bluecolor = 40
+    var mycolor = "rgb(0,0,0)"
+    var m = document.getElementById("message")
+    m.innerHTML= mycolor
+
+r.onchange=function()
+{
+    redcolor = this.value
+    mycolor = "rgb("+redcolor+","+greencolor+","+bluecolor+")"
+    document.title=mycolor
+    document.body.style.background = mycolor
+    m.innerHTML = mycolor
+}
+
+g.onchange=function()
+{
+    greencolor = this.value
+    mycolor = "rgb("+redcolor+","+greencolor+","+bluecolor+")"
+    document.title = mycolor
+    document.body.style.background = mycolor
+    m.innerHTML = mycolor
+}
+
+b.onchange=function()
+{
+    bluecolor = this.value
+    mycolor = "rgb("+redcolor+","+greencolor+","+bluecolor+")"
+    document.title=mycolor
+    document.body.style.background = mycolor
+    m.innerHTML = mycolor
+}
+
+function show()
+{
+    if(kyaboxuperhai=="ha")
+{
+    kyaboxuperhai="na"
+    box.style.top="0px"
+}
+
+else
+
+{
+    kyaboxuperhai="ha"
+    box.style.top="-300px"
+}
+document.title=kyaboxuperhai
+
+}  
+
+document.title = mycolor
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        box-sizing:border-box;
+    }
+ #main{
+    width:100%;
+    height:500px;
+    border:1px black solid;
+    padding:10px;
+    text-align: center;
+ }
+
+ label{margin:2px}
+
+ #output
+ {
+    width:100%;
+    height:96%;
+    border:1px black solid;
+    margin-top:5px;
+    padding:2px;
+    font-size:28px;
+    color:red;
+    font-family:arial black;
+    text-shadow:5px 5px 5px gray;
+ }
+</style>
+
+<body>
+ <div id="main">
+
+    <div><label>type no</label><input id="userinput" type="number" min="2" max="900"><button id="mybutton">create</button>
+    
+    
+    
+    
+     </div>
+
+
+ </div>
+    
+
+ <script>
+window.document.body.style.backgroundImage = "url('images/table.png')"
+
+
+    var topheading="Table of"
+    var u = document.getElementById("userinput")
+    var b = document.getElementById("mybutton")
+    var out = document.getElementById("output")
+    var m;
+    u.onkeyup=function()
+    {
+     m=""
+out.innerHTML=topheading+u.value+"<br/>"
+
+for(var i = 1;i<=10;i++)
+{
+    m+=u.value+" * "+i+" = "+i*u.value+"<br/>"
+}
+
+out.innerHTML+=m
+    }
+
+u.onchange = function()
+{
+m=""
+out.innerHTML=topheading+u.value+"<br/>"
+
+for(var i=1;i<=10;i++)
+{
+    m+=u.value+"*"+i+"="+i*u.value+"<br/>"
+}
+out.innerHTML+=m
+
+}
+
+b.onclick = function()
+{
+m=""
+out.innerHTML=topheading+u.value+"<br/>"
+
+for(var i=1;i<=10;i++)
+{
+    m+=u.value+"*"+i+"="+i*u.value+"<br/>"
+}
+out.innerHTML+=m
+
+}
+ </script>
+
+</body>
+</html>
