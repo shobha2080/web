@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+
+            #image
+            {
+                width:450px;
+                margin:auto;
+                height:80px;
+                //margin-top:100px;
+                z-index:5;
+            }
+
+            .pic
+            {
+                width:450px;
+                margin:auto;
+            }
+
+            #type
+            {
+                width:100%;
+                //background:red;
+                text-align:center;
+                margin-top:80px;
+                //margin-lift:300px;
+                //margin:auto;
+            }
+
+            #main{
+                width:380px;
+                height:500px;
+                //Border:1px black solid;
+                //padding:10px;
+               
+                text-align:center;
+                margin:auto;
+            }
+            label{margin:2px;}
+
+            #output{width:100%;
+            height:96%;
+            //border:1px black solid;
+            margin-top:10px;
+            margin-left:-10px;
+            padding:2px;
+            font-size:25px;
+            color:black;
+            font-family:arial black;
+            //text-shadow:5px 5px 5px gray;
+}
+        </style>
+
+        <body bgColor="#d8f5ff">
+
+        <div id="image">
+            <img src="images/table2.jpg" class="pic">
+        </div>
+        
+
+        <div id="main">
+         <div><label>Type No</label><input id="userinput" type="number" min="2" max="900"></div>
+         <div id="output"></div>
+        </div>
+
+        <div id="type">
+            Type the number of whose tables you want to know in the search box above.
+        </div>
+        
+
+        <script>
+
+            var topheading = "Table of "
+            var u = document.getElementById("userinput")
+            var b = document.getElementById("mybutton")
+            var out = document.getElementById("output")
+            var m;
+            u.onkeyup=function()
+            {
+                m=""
+                out.innerHTML=topheading+u.value+"<br/>"
+
+                for(var i=1;i<=10;i++)
+            {
+                m+=u.value+"*"+i+"="+i*u.value+"<br/>"
+            }
+            out.innerHTML+=m
+            }
+
+            /*  ==================  */
+
+            u.onchange=function()
+            {
+                m=""
+                out.innerHTML=topheading+u.value+"<br/>"
+
+                for(var i=1;i<=10;i++)
+            {
+                m+=u.value+"*"+i+"="+i*u.value+"<br/>"
+            }
+            out.innerHTML+=m
+            }
+
+              /*  ==================  */
+
+              b.onclick=function()
+            {
+                m=""
+                out.innerHTML=topheading+u.value+"<br/>"
+
+                for(var i=1;i<=10;i++)
+            {
+                m+=u.value+"*"+i+"="+i*u.value+"<br/>"
+            }
+            out.innerHTML+=m
+            }
+
+        </script>
+
+    </body>
+</html>         

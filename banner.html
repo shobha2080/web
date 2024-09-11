@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#container1
+{
+//background:red;
+width:70%;
+height:500px;
+margin:auto;
+margin-top:-6px;
+box-shadow:10px 10px 10px gray;
+}
+
+#container1 img
+{
+width:70%;
+height:500px;
+position:absolute;
+transition:1.50s;
+}
+
+
+
+/*    Extra small devices (phones, 600px and down)     */
+
+@media only screen and (max-width: 600px)
+ {
+    #container1
+    {
+        height:100px;
+    }
+    #container1 img
+    {
+        height:100px;
+    }
+
+  }
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:600px)
+ {
+    #container1
+    {
+        height:150px;
+    }
+    #container1 img
+    {
+        height:150px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	#container1
+    {
+        height:450px;
+    }
+    #container1 img
+    {
+        height:450px;
+    }
+
+}
+
+
+
+
+
+
+
+
+</style>
+
+<body  onLoad="runbanner()">
+<div id="container1">
+<img id="g1" src="images/g1.jpg">
+<img id="g2" src="images/g2.jpg">
+<img id="g3" src="images/g3.jpg">
+<img id="g4" src="images/g4.jpg">
+<img id="g5" src="images/g5.jpg">
+
+</div>
+
+    <script>
+    var g1 = document.getElementById("g1")    
+    var g2 = document.getElementById("g2")   
+    var g3 = document.getElementById("g3") 
+    var g4 = document.getElementById("g4")  
+    var g5 = document.getElementById("g5") 
+      
+    var c = 0
+
+    function runbanner()
+    {
+      document.title = c
+       
+     switch(c)
+     {
+      
+        case 1:
+        g5.style.opacity = "0"
+        break;  
+
+        case 2:
+        g4.style.opacity = "0" 
+        break; 
+
+        case 3:
+        g3.style.opacity = "0" 
+        break;  
+
+
+        case 4:
+        g2.style.opacity = "0" 
+        break;
+
+        case 5:
+        
+        break;
+
+        case 6:
+
+        
+          g5.style.opacity = "1"
+               g4.style.opacity = "1"
+                    g3.style.opacity = "1"
+                         g2.style.opacity = "1"
+                              g1.style.opacity = "1"
+
+        break;
+
+
+
+
+     }
+
+     if(c<=5)
+        {
+         c++
+        }
+        else
+        {
+            c = 0
+        }
+
+       
+    setTimeout("runbanner(0)",1000)    
+    }
+    
+
+    </script>
+    
+</body>
+</html>
