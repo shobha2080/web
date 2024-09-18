@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{margin: 0%;}
+</style>
+
+<body>
+    <canvas id="mycan"></canvas>
+    <script>
+
+       var can = document.getElementById("mycan")
+       var w = window.innerWidth
+       var h = window.innerHeight
+       can.width = w
+       can.height = h
+       var r,g,b,drawcolor
+       drawcolor = "red"
+
+
+       const c = can.getContext("2d");
+       can.style.background="gray"
+       c.fillStyle="red"
+
+       function draw(e)
+       {
+        r = Math.round(Math.random()*255)
+        g = Math.round(Math.random()*255)
+        b = Math.round(Math.random()*255)
+
+        mycolor = "rgb("+r+","+g+","+b+")"
+
+        document.title = "x = " +e.pageX+ "y = " +e.pageY
+        c.beginPath();
+        c.arc(e.pageX, e.pageY, 40, 0, 2*Math.PI);
+        c.fillStyle = mycolor
+        c.fill()
+        //c.stroke();
+
+       }
+
+
+       
+       
+
+
+       document.addEventListener("mousemove",draw)
+       document.title = "Ready"
+
+
+    </script>
+    
+</body>
+</html>
