@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #banner{
+        width: 500%;
+        height: 500px;
+        background:red ;
+        position:relative;
+        margin: 10px;
+        transition: 1.50s;
+
+    }
+
+    .pic{
+        width: 19.5%;
+        
+    }
+</style>
+<body>
+    
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #banner{
+        width: 500%;
+        height: 500px;
+        background:red ;
+        position:relative;
+        margin: 10px;
+        transition: 1.50s;
+
+    }
+
+    .pic{
+        width: 19.9%;
+        height: 500px;
+        margin-left:3px;
+        position: relative;
+    }
+
+    #mybutton{
+    color: rgb(41,6,6);
+    position: relative;
+    top: -300px;
+    font-family: arial black;
+    }
+
+    #b2{margin-left: 89%;cursor: pointer;}
+    #b1{cursor: pointer;}
+</style>
+<body>
+
+    <div id="banner">
+        <img class="pic" src="images/p1.png">
+        <img class="pic" src="images/p2.jpg">
+        <img class="pic" src="images/p3.jpg">
+        <img class="pic" src="images/p4.png">
+        <img class="pic" src="images/p5.png">
+    </div>
+
+    <div id="button"><button id="b1">next</button><button id="b2">previous</button></div>
+    
+    <script>
+        var b1 = document.getElementById("b1")
+        var b2 = document.getElementById("b2")
+        var banner= document.getElementById("banner")
+        
+        var c = 0
+
+        function next()
+        {
+            if(c<400)
+        {
+            c=c+100
+            banner.style.left=-c+"%"
+        }
+
+        document.title = c
+        }
+
+
+        function prev()
+        {
+            if(c>0)
+        {
+            c=c-100
+            banner.style.left=-c+"%"
+        }
+
+        document.title = c
+        }
+
+document.title="ready"
+
+b1.addEventListener("click",next)
+b2.addEventListener("click",prev)
+    </script>
+</body>
+</html> 
