@@ -1,0 +1,153 @@
+
+
+<!doctype html>
+
+<html>
+
+<head><title>practicework</title></head>
+
+<style>
+
+    @keyframes ani1
+    {
+        from{transform: scale(0);}
+        to{transform: scale(1);}
+    }
+    
+    .hcss{
+        margin:auto;
+        text-align:center;
+        width:100%;
+        color:white;
+        font-size:80px;
+        padding: 10px;
+        transition: 1.0s;
+        animation: ani1 1s;
+    }
+#video
+{
+width:100%;
+position:fixed;
+z-index:-3;
+opacity:0.50;
+}
+
+
+*:before,
+*:after{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+body{
+background-color:#121317;
+}
+
+
+#div{
+height:100px;
+width:100%;
+min-width:600px;
+display:flex;
+align-items:center;
+justify-content:space-around;
+//margin:auto;
+ackground:red;
+margin-top:30px;
+}
+
+
+
+
+
+a{
+position:relative;
+text-decoration:none;
+font-family:"poppins",sans-serif;
+color:#a0a0a0;
+font-size:50px;
+letter-spacing:0.10px;
+
+
+}
+
+
+a:before,
+a:after{
+content:"";
+position:absolute;
+height:3px;
+width:0%;
+background-color:#18f08b;
+transition:0.5s;
+}
+
+
+a:after{
+left:0;
+bottom:-10px;
+}
+
+a:before{
+right:0;
+top:-10px;
+}
+
+a:hover{
+color:#ffffff
+
+}
+
+a:hover:after,
+a:hover:before{
+ 
+width:100%;
+}
+
+
+
+
+</style>
+
+
+<body>
+
+<video id="video"  width="100%"autoplay loop muted>
+<source src="images/web1.mp4" type="video/mp4" />
+your browser does not support video
+</video>
+
+<div>
+<h1 class="hcss">Daily Assignments</h1>
+
+</div>
+
+<hr/">
+
+
+
+<div id="div">
+<a href="work.html">HTML/CSS</a>
+
+<a href="js.html">JAVA Script</a>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
