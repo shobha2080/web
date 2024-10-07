@@ -4,210 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
 </head>
-<style>
-body{
-background-image:url(b2.gif);
-background-size:100% 300%;
-
-}
-h1{color:white;}
-
-</style>
 <body>
-    <h1>Caps Lock Must be on to  Play with Keyboard Sound Node</h1>
-    <h1 id="mes"></h1>
-   
 
-
-<script>
-    var r,g,b,h
-var d = new Array();
-var mycolor ;
-
-for(var i =1;i<=4;i++)
-{
-   r = Math.round(Math.random()*255) 
-   g = Math.round(Math.random()*255) 
-   b = Math.round(Math.random()*255)
-
-   mycolor ="rgb("+r+","+g+","+b+")"
-
-   h = Math.round(Math.random()*4)
-
-
-  d[i] = document.createElement("div")
-  document.body.appendChild(d[i])
-
-  d[i].style = "transform-origin:50% 100%;position:relative;top:700px;width:100px;height:100px;background:"+mycolor+";float:left;margin-left:30px;"
-  d[i].style.transform="scaleY("+h+")"
-
-}
-
-
-var m = document.getElementById("mes")
-var k;
-
-var s = new Audio("key02.mp3")
-
- //s.play()
-//alert(s.src)
-
-function f1(event)
-{
- event.preventDefault() 
-
- k = event.keyCode
-
-m.innerHTML= "Code = "+ k+ " Charecter = "+ event.key 
-document.title = "Key Code ="+k
-
-
-for(var i =1;i<=4;i++)
-{
-  
-    r = Math.round(Math.random()*255) 
-   g= Math.round(Math.random()*255) 
-   b = Math.round(Math.random()*255)
-   mycolor ="rgb("+r+","+g+","+b+")"
-   h = Math.round(Math.random()*4)
-    d[i].style = "transform-origin:50% 100%;position:relative;top:700px;width:100px;height:100px;background:"+mycolor+";float:left;margin-left:30px;"
-    h = Math.round(Math.random()*4)
- d[i].style.transform="scaleY("+h+")"
-}
-
-    switch(event.key)
-          {
-
-            case "A" :
-               
-            s.src = "key01.mp3";s.play();
-            document.bgColor ="#E9EFEC"
-        
-            break;
-
-
+    <div class="warpper">
+        <header>
+            <span><img style ="width: 100%;" src="tunes/logo-01.png"></span>
             
-            case "B" :
-            s.src = "key02.mp3";s.play() 
-                document.bgColor ="#16423C"
-            break;
-
-            case "C" :
-            s.src = "key03.mp3";s.play() 
-                document.bgColor ="#6A9C89"
-            break;
-            case "D" :
-            s.src = "key04.mp3";s.play() 
-                document.bgColor ="#C4DAD2"
-            break;
-
-            case "E" :
-            s.src = "key05.mp3";s.play() 
-                document.bgColor ="#F0A8D0"
-            break;
-
-
-            case "F" :
-            s.src = "key06.mp3";s.play() 
-                document.bgColor ="#F7B5CA"
-            break;
-
-            case "G" :
-            s.src = "key07.mp3";s.play() 
-                document.bgColor ="#FFC6C6"
-            break;
-            case "H" :
-            s.src = "key08.mp3";s.play() 
-                document.bgColor ="#FFEBD4"
-            break;
-            case "I" :
-            s.src = "key09.mp3";s.play() 
-                document.bgColor ="#6482AD"
-            break;
-            case "J" :
-            s.src = "key10.mp3";s.play() 
-                document.bgColor ="#7FA1C3"
-            break;
-            case "K" :
-            s.src = "key11.mp3";s.play() 
-                document.bgColor ="#E2DAD6"
-            break;
-            case "L" :
-            s.src = "key12.mp3";s.play() 
-                document.bgColor ="#694F8E"
-            break;
-            case "M" :
-            s.src = "key13.mp3";s.play() 
-                document.bgColor ="#B692C2"
-            break;
-            case "N" :
-            s.src = "key14.mp3";s.play() 
-                document.bgColor ="#E3A5C7"
-                
-            break;
-            case "O" :
-            s.src = "key15.mp3";s.play() 
-                document.bgColor ="#987070"
-            break;
-            case "P" :
-            s.src = "key16.mp3";s.play() 
-                document.bgColor ="#C39898"
-            break;
-            case "Q" :
-            s.src = "key17.mp3";s.play() 
-                document.bgColor ="#DBB5B5"
-            break;
-            case "R" :
-            s.src = "key18.mp3";s.play() 
-                document.bgColor ="#074173"
-            break;
-            case "S" :
-            s.src = "key19.mp3";s.play() 
-                document.bgColor ="#C5FF95"
-            break;
-            case "T" :
-            s.src = "key20.mp3";s.play() 
-                document.bgColor ="#1679AB"
-            break;
-            case "U" :
-            s.src = "key21.mp3";s.play() 
-                document.bgColor ="#944E63"
-            break;
-            case "V" :
-            s.src = "key22.mp3";s.play() 
-                document.bgColor ="#B47B84"
-            break;
-            case "W" :
-            s.src = "key23.mp3";s.play() 
-                document.bgColor ="#FFE7E7"
-            break;
-            case "X" :
-            s.src = "key24.mp3";s.play() 
-                document.bgColor ="#81689D"
-            break;
-            case "Y" :
-            s.src = "key01.mp3";s.play() 
-                document.bgColor ="#85586F"
-            break;
-            case "Z" :
-            s.src = "key03.mp3";s.play() 
-                document.bgColor ="#AC7D88"
-            break;
-            case " " :
-            s.src = "key03.mp3";s.play() 
-                document.bgColor ="#99BC85"
-            break;
-          }
-          //document.bgColor = "black"
-  }
-
-document.bgColor = "black"
-document.title ="Ready"
-
-
-document.body.addEventListener("keydown",f1)
-</script>
-
+        </header>
+        <ul class="piano-keys">
+            <li class="key white" data-note="a"><span></span></li>
+            <li class="key black" data-note="w"><span></span></li>
+            <li class="key white" data-note="s"><span></span></li>
+            <li class="key black" data-note="e"><span></span></li>
+            <li class="key white" data-note="d"><span></span></li>
+            <li class="key white" data-note="f"><span></span></li>
+            <li class="key black" data-note="t"><span></span></li>
+            <li class="key white" data-note="g"><span></span></li>
+            <li class="key black" data-note="y"><span></span></li>
+            <li class="key white" data-note="h"><span></span></li>
+            <li class="key black" data-note="u"><span></span></li>
+            <li class="key white" data-note="j"><span></span></li>
+            <li class="key white" data-note="k"><span></span></li>
+            <li class="key black" data-note="o"><span></span></li>
+            <li class="key white" data-note="l"><span></span></li>
+            <li class="key black" data-note="p"><span></span></li>
+            <li class="key white" data-note=";"><span></span></li>
+            <li class="key black" data-note="m"><span></span></li>
+            <li class="key white" data-note="z"><span></span></li>
+            <li class="key white" data-note="r"><span></span></li>
+            <li class="key black" data-note="v"><span></span></li>
+            <li class="key white" data-note="x"><span></span></li>
+            <li class="key black" data-note="c"><span></span></li>
+            <li class="key white" data-note="b"><span></span></li>
+        </ul>
+    </div>
+    
+    <audio id="a" src="tunes/a.wav"></audio>
+    <audio id="w" src="tunes/i.wav"></audio>
+    <audio id="s" src="tunes/s.mp3"></audio>
+    <audio id="e" src="tunes/e.wav"></audio>
+    <audio id="d" src="tunes/d.wav"></audio>
+    <audio id="f" src="tunes/f.wav"></audio>
+    <audio id="t" src="tunes/t.mp3"></audio>
+    <audio id="g" src="tunes/g.wav"></audio>
+    <audio id="y" src="tunes/y.mp3"></audio>
+    <audio id="h" src="tunes/h.wav"></audio>
+    <audio id="u" src="tunes/u.mp3"></audio>
+    <audio id="j" src="tunes/j.wav"></audio>
+    <audio id="k" src="tunes/k.wav"></audio>
+    <audio id="o" src="tunes/o.wav"></audio>
+    <audio id="l" src="tunes/l.wav"></audio>
+    <audio id="p" src="tunes/p.wav"></audio>
+    <audio id=";" src="tunes/;.wav"></audio>
+    <audio id="m" src="tunes/m.wav"></audio>
+    <audio id="z" src="tunes/z.mp3"></audio>
+    <audio id="r" src="tunes/r.mp3"></audio>
+    <audio id="v" src="tunes/v.mp3"></audio>
+    <audio id="x" src="tunes/x.mp3"></audio>
+    <audio id="c" src="tunes/c.wav"></audio>
+    <audio id="b" src="tunes/b.wav"></audio>
+    
+    
 </body>
 </html>
