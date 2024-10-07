@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bakery</title>
+</head>
+<style>
+    
+*{
+  font-family: helvetica;
+ transition: 0.5s ease-in-out;
+}
+
+html{
+scroll-behavior:smooth;
+animation:opacity 3s;
+}
+
+@Keyframes opacity{
+    from{ opacity: 0%;}
+    to{opacity: 100%;}
+    }
+
+    #bar{
+        width:100%;
+        height:80px;
+        background:black;
+        margin: auto;
+        margin-top:-10px;
+        position: fixed;
+        z-index:5;
+        display: flex;
+        justify-content:space-between;
+
+    }
+
+    #logo{
+        width:15%;
+        height: 80px;
+        //background:red ;
+        text-align:center;
+    }
+
+    #manu{
+        width:40% ;
+        height:80px;
+        //background:pink ;
+        display:flex;
+        justify-content:space-between;
+        }
+    .mbar{
+        width:12%;
+        height:30px ;
+        //background: blue;
+        margin-top:49px;
+        //text-align:center;
+        
+    }
+
+    
+
+    .big {
+        width:100%;
+        //height:auto;
+        background:#e2e7f7;
+        margin: auto;
+
+    }
+    #img{
+        margin-top:70px ;
+    }
+
+    #bigbox{
+       width:100%;
+       height:1450px;
+       background:#e2e7f7;
+
+       }
+    #info {
+        width:65%;
+        height:1450px;
+        //background:yellow ;
+        margin:auto;
+	display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #inbox{
+        width:45%;
+        height:1450px;
+        //background:green;
+        margin:auto;
+      
+    }
+
+    #mini{
+        width:98%;
+        height:100px;
+        //background:pink;
+        margin-top:30px;
+       
+        }
+    #squ{
+        width:90%;
+        //height:500px;
+        //background:blue ;
+        margin-top:30px;
+    } 
+    
+    #rec{
+        width:100%;
+        //height:350px;
+        //background:orange;
+        margin-top:30px;
+    }  
+
+     #manu2{
+       width:100%;
+       height:1250px;
+       background:black;
+       margin-top:-27px;
+
+       }
+       #info2 {
+        width:75%;
+        height:1100px;
+        //background:orange ;
+        margin:auto;
+	    
+    }
+
+    #mhed{
+        width:100%;
+        //height:350px;
+        //background-color:antiquewhite;
+       
+        
+    }
+
+    #mhed2{
+        width:100%;
+        height:1000px;
+        //background:gray;
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+        
+    }
+
+     #inbox2{
+        width:45%;
+        height:880px;
+        //background:green;
+        //margin:auto;
+        //float:left;
+        //margin: 30px;
+
+    }   
+    
+        #mini3{
+        width:100%;
+        //height:200px;
+        //background:pink;
+        //margin-top: 30px;
+        }
+
+
+       #heds{
+       width:40%;
+       //height:100px;
+       //background:darkgray;
+       margin-top:0px;
+       margin:auto;    
+       text-align:center;
+        
+    }
+
+
+       #heds2{
+       width:15%;
+       height:30px;
+       background:black;
+       margin:auto;
+       margin-top:-33px;    
+       text-align:center;
+        
+    }
+
+      
+    .abox{
+        width:100%;
+        height:auto;
+        background:black;
+        margin: auto;
+
+    } 
+        
+
+    #mini2{
+        width:100%;
+        height:230px;
+        //background:pink;
+        
+       
+        }
+
+       
+     
+        .big2 {
+        width:100%;
+        //height:auto;
+        background:#e2e7f7;
+        margin:auto;
+
+    }
+
+        .big3 {
+        width:100%;
+        //height:auto;
+        background:black;
+        //margin: auto;
+
+    }
+    #inbox3{
+        width:70%;
+        height:600px;
+        //background:green;
+        margin:auto;
+        display: flex;
+        justify-content:space-between;
+        align-content:space-around;
+        flex-wrap: wrap;
+    }
+    #squ2{
+        width:30%;
+        //height:400px;
+        //background:blue ;
+        transation:0.50s;
+        
+    }
+
+    #squ2:hover{
+               border:2px black solid;
+               box-shadow:10px 10px 10px gray;
+               transation-scale:2s;
+    } 
+    #about{
+        width:100%;
+        height:670px;
+        //background:brown;
+        //display: flex;
+        //justify-content:space-between;
+        //align-content:space-around;
+        //flex-wrap: wrap;
+
+    }
+
+     #abu{
+        width:75%;
+        height:670px;
+        //background:blue;
+        margin:auto;
+        display:flex;
+        justify-content:space-between;
+        //align-content:space-around;
+        flex-wrap:wrap;
+         
+    }
+    
+  
+    #inbox4{
+        width:68%;
+        height:600px;
+        //background:green;
+        margin:auto;
+        display:flex;
+        justify-content:space-between;
+        align-content:space-around;
+        flex-wrap:wrap;
+    }
+    #hedd{
+        width:35%;
+        height:650px;
+        //background:palegreen;
+        //margin-left:300px;
+    }
+    #hedd2{
+        width:50%;
+        height:670px;
+        //background:palegreen;
+        //margin-right:300px;
+    }
+    #rec2{
+        width:100%;
+        //height:350px;
+        //background:orange;
+        margin-top:30px;
+    }
+    #spec{
+        width: 30%;
+        //height:550px;
+        //background:chocolate;
+        text-align:center;
+        transation:0.50s;
+        
+    }
+
+    #spec:hover{
+               border:2px white solid;
+               //box-shadow:10px 10px 10px gray;
+               transation-scale:2s;
+    } 
+    #spec3{
+        width: 30%;
+        //height:300px;
+        //background: chocolate;
+    } 
+    #con{
+        width:40%;
+        height: 600px;
+        //background: gold;
+        margin:auto;
+        text-align:center
+    } 
+
+    #rev{
+        width:100%;
+        height:700px;
+        background:black;
+    }
+    #revh{
+        //background:yellow;
+        margin:auto;
+        margin-top:-100px;
+        width:30%;
+        text-align:center;
+         }
+
+    #spec2{
+        width: 30%;
+        //height:400px;
+        background:gray;
+        text-align:center;
+        border-radius:10px;
+        
+    } 
+    #last{
+        width:100%;
+        //height: 400px;
+        background:olivedrab ;
+    }
+
+    .pic{
+        width:100%;
+    }
+    .pic2{
+        width:100%;
+        margin-top:-30px;
+    }
+    .pic3{
+        width:100%;
+        margin-top:-100px;
+    }
+
+
+    #aaa{
+        font-size: 40px;
+        color: black;
+       
+    }
+
+    #iii{
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+
+    #aaa2{
+        font-size:20px;
+    }
+    #aii{
+       font-size: 40px;
+       padding:40px;
+       color:white;
+       }
+    #aii2{
+       font-size: 25px;
+       color:white;
+       
+    }
+    #mii{
+       font-size:30px;
+       color:white;
+       
+       
+    }
+    #mii2{
+       font-size:35px;
+       color:white;
+       margin-top:130px;
+       
+    }
+
+    #para{
+        font-size:20px;
+        color:white;
+    }
+
+    #para2{
+        font-size:25px;
+        
+    }
+
+
+    #wts{
+       font-size:50px;
+       padding:40px;
+       color:white;
+       }
+
+    #iden{
+        width:20%;
+        //height:70px;
+        //background: ghostwhite;
+        margin:auto;
+        margin-top:-30px;
+        border-radius:100px;
+        
+    }
+
+#xyz{
+background:black;
+height:80px;
+widht:100%;
+}
+
+#xyz2{
+background:black;
+height:100px;
+widht:100%;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+            {body{
+      background:red;
+   }
+            
+                           
+    .big {
+        width:100%;
+        //height:600px;
+        background:#e2e7f7;
+        margin: auto;
+
+    }
+    #img{
+        margin-top:70px ;
+    }
+
+    #bigbox{
+       width:100%;
+       height:900px;
+       background:#e2e7f7;
+
+       }
+    #info {
+        width:65%;
+        height:900px;
+        //background:yellow ;
+        margin:auto;
+	    display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #inbox{
+        width:45%;
+        height:900px;
+        //background:green;
+        margin:auto;
+      
+    }
+
+    #mini{
+        width:98%;
+        //height:100px;
+        //background:pink;
+        margin-top:30px;
+       
+        }
+    #squ{
+        width:90%;
+        //height:500px;
+        background:blue ;
+        margin-top:30px;
+    } 
+    
+    #rec{
+        width:100%;
+        //height:350px;
+        //background:orange;
+        margin-top:30px;
+    }  
+
+     #manu2{
+       width:100%;
+       height:1250px;
+       background:black;
+       margin-top:-27px;
+
+       }
+       #info2 {
+        width:75%;
+        height:1100px;
+        //background:orange ;
+        margin:auto;
+	    
+    }
+
+    #mhed{
+        width:100%;
+        //height:350px;
+        //background-color:antiquewhite;
+       
+        
+    }
+
+    #mhed2{
+        width:100%;
+        height:1000px;
+        //background:gray;
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+        
+    }
+
+     #inbox2{
+        width:45%;
+        height:880px;
+        //background:green;
+        //margin:auto;
+        //float:left;
+        //margin: 30px;
+
+    }   
+    
+        #mini3{
+        width:100%;
+        //height:200px;
+        //background:pink;
+        //margin-top: 30px;
+        }
+
+
+       #heds{
+       width:60%;
+       //height:100px;
+       //background:darkgray;
+       margin-top:0px;
+       margin:auto;    
+       text-align:center;
+        
+    }
+
+
+       #heds2{
+       width:50%;
+       height:30px;
+       background:black;
+       margin:auto;
+       margin-top:-33px;    
+       text-align:center;
+        
+    }
+
+      
+    .abox{
+        width:100%;
+        height:auto;
+        background:black;
+        margin: auto;
+
+    } 
+        
+
+    #mini2{
+        width:100%;
+        height:230px;
+        background:pink;
+        
+       
+        }
+
+       
+     
+        .big2 {
+        width:100%;
+        //height:auto;
+        background:#e2e7f7;
+        margin:auto;
+
+    }
+
+        .big3 {
+        width:100%;
+        //height:auto;
+        background:black;
+        //margin: auto;
+
+    }
+    #inbox3{
+        width:70%;
+        height:300px;
+        //background:green;
+        margin:auto;
+        display: flex;
+        justify-content:space-between;
+        align-content:space-around;
+        flex-wrap: wrap;
+    }
+    #squ2{
+        width:30%;
+        //height:400px;
+        //background:blue ;
+        transation:0.50s;
+        
+    }
+
+    
+    #about{
+        width:100%;
+        height:670px;
+        //background:brown;
+        
+
+    }
+
+     #abu{
+        width:75%;
+        height:670px;
+        //background:blue;
+        margin:auto;
+        display:flex;
+        justify-content:space-between;
+        //align-content:space-around;
+        flex-wrap:wrap;
+         
+    }
+    
+  
+    #inbox4{
+        width:68%;
+        height:670px;
+        //background:green;
+        margin:auto;
+        display:flex;
+        justify-content:space-between;
+        align-content:space-around;
+        flex-wrap:wrap;
+    }
+    #hedd{
+        width:35%;
+        height:650px;
+        //background:palegreen;
+        //margin-left:300px;
+    }
+    #hedd2{
+        width:50%;
+        height:670px;
+        //background:palegreen;
+        //margin-right:300px;
+    }
+    #rec2{
+        width:100%;
+        //height:350px;
+        //background:orange;
+        margin-top:30px;
+    }
+    #spec{
+        width: 30%;
+        //height:550px;
+        //background:chocolate;
+        text-align:center;
+        transation:0.50s;
+        
+    }
+
+    
+    #spec3{
+        width: 30%;
+        //height:300px;
+        //background: chocolate;
+    } 
+    #con{
+        width:70%;
+        height:500px;
+        //background: gold;
+        margin:auto;
+        text-align:center
+    } 
+
+    #rev{
+        width:100%;
+        height:800px;
+        background:black;
+    }
+    #revh{
+        //background:yellow;
+        margin:auto;
+        margin-top:-100px;
+        width:70%;
+        text-align:center;
+         }
+
+    #spec2{
+        width:50%;
+        //height:400px;
+        background:gray;
+        text-align:center;
+        border-radius:10px;
+        
+    } 
+    #last{
+        width:100%;
+        //height: 400px;
+        background:olivedrab ;
+    }
+
+    .pic{
+        width:100%;
+    }
+    .pic2{
+        width:100%;
+        margin-top:-30px;
+    }
+    .pic3{
+        width:100%;
+        margin-top:-100px;
+    }
+
+
+    #aaa{
+        font-size:20px;
+        color: black;
+       
+    }
+
+    #iii{
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+
+    #aaa2{
+        font-size:15px;
+    }
+    #aii{
+       font-size:40px;
+       padding:40px;
+       color:white;
+       }
+    #aii2{
+       font-size:20px;
+       color:white;
+       
+    }
+    #mii{
+       font-size:20px;
+       color:white;
+       
+       
+    }
+    #mii2{
+       font-size:20px;
+       color:white;
+       margin-top:130px;
+       
+    }
+
+    #ads{
+        font-size:20px;
+    }
+
+    #para{
+        font-size:15px;
+        color:white;
+    }
+
+    #para2{
+        font-size:15px;
+        
+    }
+
+
+    #wts{
+       font-size:30px;
+       padding:40px;
+       color:white;
+       }
+
+    #iden{
+        width:20%;
+        //height:70px;
+        background: ghostwhite;
+        margin:auto;
+        margin-top:-30px;
+        border-radius:100px;
+        
+    }
+
+#xyz{
+background:black;
+height:80px;
+widht:100%;
+}
+
+#xyz2{
+background:black;
+height:100px;
+widht:100%;
+}
+
+
+
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+</style>
+<body>
+<div id="bar">
+<div id="logo"><img src="images/logo.png" style="width:65%;" ></div>
+<div id="manu">
+    <div class="mbar"><a href="bakerysotm.html" id="iii">Home</div></a>
+    <div class="mbar"><a href="#some" id="iii">Manu</div></a>
+    <div class="mbar"><a href="#about" id="iii">About us</div></a>
+    <div class="mbar"><a href="#contact" id="iii">Contact</div></a>
+    <div class="mbar"><a href="#reviwe" id="iii">Reviwe</div></a>
+    <div class="mbar"><a href="#more" id="iii">More</div></a>
+    
+</div>
+</div>
+<div class="big"><img  id="img" src="images/bake.png" alt="bake" class="pic"></div>
+
+<div id="bigbox">
+<div id="info">
+
+<div id="inbox">
+<div id="mini"><h1 id="aaa">Experience the Art of Baking</h1></div>
+<div id="squ">
+    <img src="images/bake2.png" class="pic">
+</div>
+<div id="rec">
+    <h1 id="aaa">Stylish Design</h1>
+    <p id="aaa2">Heavenly Delights is dedicated to providing a visually appealing and comfortable atmosphere for customers to enjoy. Our bakery features a modern and stylish design that enhances the customer experience. From the layout and color scheme to the interior decor and lighting, every detail has been carefully considered to create a warm and inviting ambiance that complements our freshly baked goods.</p>
+
+    <br/><br/>
+</div>
+</div>
+
+<div id="inbox">
+<div id="squ"><img src="images/bake3.png" class="pic"></div>
+<div id="rec">
+    <h1 id="aaa">Wide Variety of Baked Goods</h1>
+    <p id="aaa2">Heavenly Delights offers a wide variety of baked goods to satisfy every taste bud. Our customers can choose from an extensive selection of bread, pastries, cakes, and cookies, all made with the finest ingredients and baked to perfection. From classic favorites to unique and creative flavors, we are committed to providing a diverse range of options that cater to every preference and occasion.
+    </p>
+    <br/><br/>
+</div>
+<div id="squ"><img src="images/bake4.png" class="pic"></div>
+</div>
+</div>
+</div>
+
+
+<a name="some">
+<div id="xyz"></div>
+<div id="manu2">
+     <div id="info2">
+         <div id="mhed">
+              <div id="heds">
+                   <h1 id="aii">OUR MENU</h1></div>
+                 <hr/>
+                     <div id="heds2">
+                        <h1 id="aii2">Get Relax.Eat.</h1>
+                      </div>
+<br/><br/><br/>
+</div>
+<div id="mhed2">
+<div id="inbox2">
+<div id="mini3">
+         <h3 id="mii">Cinnamon Rolls-$4.99</h3>
+         <p id="para">Soft, fluffy rolls filled with cinnamon 
+            sugar and topped with a rich cream cheese 
+            frosting. Perfect for breakfast or as a sweet
+            treat any time of day.</p>
+<hr style="border-color:blue;"/>
+<br/><br/>
+    </div>
+    <div id="mini3">
+
+         <h3 id="mii">Croissants-$3.99</h3>
+         <p id="para">Flaky and buttery croissants, 
+            perfect for breakfast or as a 
+            side to any meal.</p>
+<hr style="border-color:blue;"/>
+<br/><br/>
+    </div>
+    <div id="mini3">
+
+
+         <h3 id="mii">Chocolate Cake-$25.99</h3>
+         <p id="para">A decadent chocolate cake, layered 
+            with rich chocolate ganache and topped 
+            with chocolate shavings. Perfect for any 
+            special occasion or as a sweet indulgence.</p>
+
+<hr style="border-color:blue;"/>
+<br/><br/>
+    </div>
+
+    <div id="mini3">
+
+         <h3 id="mii">Blueberry Muffins-$2.99</h3>
+         <p id="para">Moist and tender muffins bursting 
+            with plump, juicy blueberries. A 
+            perfect grab-and-go breakfast or snack.
+          </p>
+<hr style="border-color:blue;"/>
+<br/><br/>
+    </div>
+</div>
+
+
+
+
+<div id="inbox2">
+<div id="mini3">
+
+         <h3 id="mii">Apple Pie-$19.99</h3>
+         <p id="para">A classic apple pie, 
+            made with tender,verry flaky crust and filled 
+            with juicy, cinnamon-spiced apples. Perfect 
+            for sharing with family and friends.</p>
+<hr style="border-color:blue;"/>
+<br/><br/>
+   </div>
+
+    <div id="mini3">
+
+         <h3 id="mii">Chocolate Chip Cookies-$1.25 each</h3>
+         <p id="para">Classic chocolate chip cookies, 
+               made with  chocolate chips and 
+               a perfect balance of sweetness and crunch.</p>
+<hr style="border-color:blue;"/>
+<br/><br/>
+    </div>
+
+    <div id="mini3">
+
+         <h3 id="mii">Baguette-$2.99</h3>
+         <p id="para">A rich and delicious pecan pie,
+              made with a flaky crust and filled with 
+              a sweet and nutty filling. Perfect for any 
+              special occasion or as a sweet indulgence.</p>
+<hr style="border-color:blue;"/>
+<br/><br/>
+   </div>
+
+    <div id="mini3">
+
+         <h3 id="mii">Pecan Pie-$21.99</h3>
+         <p id="para">A classic French baguette, 
+                with a crispy crust and soft, chewy 
+                .Perfect for sandwiches or 
+                as a side to any meal</p>
+<hr style="border-color:blue;"/>
+<br/><br/>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="big3"><img src="images/bake5.png" class="pic"></div> 
+<div class="big">
+<div id="inbox3">
+    <div id="squ2"><img src="images/bake6.png" class="pic"></div>
+    <div id="squ2"><img src="images/bake7.png" class="pic"></div>
+    <div id="squ2"><img src="images/bake8.png" class="pic"></div>
+</div>
+</div>
+</a>
+
+
+
+
+
+
+<a name="about">
+
+
+<div class="big2"><img  id="img" src="images/bake10.png" alt="bake" class="pic"></div>
+<div id="about">
+     <div id="abu">
+          <div id="hedd">
+           <div id="mini3">
+           <h1 id="ads"><u>Modern Style</u></h1> 
+        <p id="para2">Our bakery features a modern and stylish design that enhances the customer experience.</p>
+        <br/>
+        </div>
+
+        <div id="mini3">
+            <h1 id="ads"><u>Extensive Selection</u></h1> 
+            <p id="para2">We offer a wide variety of baked goods, from bread to pastries, cakes, and cookies.</p>
+            <br/>
+        </div>
+        <div id="mini3">
+            <h1 id="ads"><u>Convenient Customization</u></h1> 
+            <p id="para2">Our online ordering system allows customers to customize their orders with ease.</p>
+            <br/>
+        </div>
+</div>
+          
+
+       <div id="hedd2">
+        <div id="mini3"><p id="para2">At Heavenly Delights, our team 
+                          of passionate bakers is committed 
+                          to providing our customers with a 
+                          memorable experience. Our team combines 
+                          traditional baking techniques with modern 
+                          design to create an unforgettable ambiance. 
+                          We work tirelessly to ensure that our customers 
+                          receive the highest quality baked goods and customer
+                          service.</p></div>
+        <div id="rec2"><img src="images/bake9.png" class="pic"></div>
+    </div>        
+   </div>
+  </div>
+</div>
+
+<div class="abox">
+    <div id="inbox4">
+        <div id="spec3">
+            <h1 id="mii2">Our Specialties</h1>
+            <p id="para">Our bakery specializes in creating a wide variety of baked goods. Our specialties include freshly baked bread, delicate pastries, exquisite cakes, and delectable cookies. We also offer custom cakes and pastry orders for special occasions.</p>
+        </div>
+        <div id="spec">
+            <img src="images/bake12.png" class="pic">
+            <h3 style="color:white;">Cinnamon Rolls-$4.99</h3>
+            <p style="color:white;">
+                Soft, fluffy rolls filled with cinnamon sugar and topped with a rich cream cheese frosting. Perfect for breakfast or as a sweet treat any time of day.
+            </p>
+        </div>
+        <div id="spec">
+            <img src="images/bake13.png" class="pic">
+            <h3 style="color:white;">Blueberry Muffins-$2.99</h3>
+            <p style="color:white;">
+                Moist and tender muffins bursting with plump, juicy blueberries. A perfect grab-and-go breakfast or snack.
+            </p>
+        </div>
+    </div>
+</div>
+</a>
+
+<a name="contact">
+<div class="big3"><img  id="img" src="images/bake11.png" alt="bake" class="pic3"></div> 
+<div class="big">
+    <div id="con">
+        <br/><br/><br/><br/><br/><br/>
+
+        <h1>OUR LOCATION</h1>
+        <h3>3 E 19th St, 123 Fifth Indra puram India</h3>
+        <p id="para2">Place your order today at Heavenly Delights and indulge in our delicious baked goods. You can place your order online for pick-up or delivery, or you can visit us in-store for a delightful experience.</p>
+        <h2>TELEPHONE RESERVATIONS</h2>
+        <h3>12 34 56 7890</h3>
+    </div>
+</div>
+</a>
+
+
+<a name="reviwe">
+<div id="xyz2"></div>
+
+<div id="rev">
+    <div id="revh">
+
+        <h1 id="wts">What They Say</h1>
+    </div>
+
+
+    <div id="inbox4">
+   
+        <div id="spec2">
+            
+            <div id="iden">
+                <img src="images/i1.png" class="pic">
+                </div>
+                <br/><br/>
+                <p id="para">Heavenly Delights is a must-visit bakery! Their pastries are heavenly, and the cakes are divine. The bakery's attention to detail, quality ingredients, and exceptional service make it a top choice for me.</p>
+                <h3 id="para">SARAH</h3>
+                <br/><br/>
+        </div>
+        <div id="spec2">
+            <div id="iden"><img src="images/i3.png" class="pic"></div>
+            <br/><br/>
+                <p id="para">The bread at Heavenly Delights is unmatched. It's fresh, flavorful, and has the perfect texture. I also appreciate the bakery's online ordering system, which makes it easy to place orders for pick-up or delivery.</p>
+                <h3 id="para">JAMES</h3>
+                <br/><br/>
+        </div>
+        <div id="spec2">
+            <div id="iden"><img src="images/i2.png" class="pic"></div>
+            <br/><br/>
+                <p id="para">I am a loyal customer of Heavenly Delights. Their cakes are not only beautiful but also incredibly delicious. I appreciate their attention to detail when it comes to customizing orders, ensuring that every order is exactly what I want.</p>
+                <h3 id="para">EMILY</h3>
+                <br/><br/>
+        </div>
+    </div>
+</div>
+</a>
+
+<a name="more">
+<div id="xyz2"></div>
+
+<div id="last"><img src="images/bake15.png" class="pic"></div>
+</a>
+
+</body>
+</html>
