@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.calculator {
+  width: 100vw;
+  margin: 0 auto;
+  border: px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top:50%;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  backround: pink;
+  
+}
+#result{
+  height: 50px;
+  width: ;
+  font-size: 30px;
+  text-align: center;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  backround: cyan;
+}
+
+.inputs input {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 50%;
+  padding: px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #5756CE;
+  color: white;
+  cursor: pointer;
+}
+
+
+</style>
+<body>
+<div class="calculator">
+  <div class="display">
+    <br/>
+    <input type="text" id="result" value=""readonly>
+    <p><h1 style="margin-top: -10px;">RESULT</h1></p>
+  </div>
+  <div class="inputs">
+    <input type="text" id="percent" placeholder="X%">
+    
+    <input type="text" id="number" placeholder="ADD TO Y">
+  </div>
+  <div class="inputs">
+    <div style="width: 40%; background: ellow;">
+      <p>Percent</p>
+    </div>
+
+    <div style="width: 55%; background: ellow;">
+      <p>Number</p>
+    </div>
+  </div>
+
+  <br/>
+  <button id="get-result"><h2>GET RESULT</h2></button>
+ 
+</div>
+<script>
+    const resultDisplay = document.getElementById('result');
+const percentInput = document.getElementById('percent');
+const numberInput = document.getElementById('number');
+const getResultButton = document.getElementById('get-result');
+
+
+getResultButton.addEventListener('click', () => {
+  const percent = parseFloat(percentInput.value);
+  const number = parseFloat(numberInput.value);
+  const result =  (percent * number / 100);
+  resultDisplay.value = result.toFixed(2);
+});
+</script>
+</body>
+</html>
