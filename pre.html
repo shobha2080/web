@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+</head>
+<style>
+
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #252d38;
+}
+
+.calculator {
+  width: 90%;
+  margin: 0 auto;
+  border: px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top:10%;
+  backround:green;
+}
+
+.display {
+  
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  backround: pink;
+  margin-top: 50px;
+  
+}
+#result{
+  height: 50px;
+  width: ;
+  font-size: 30px;
+  text-align: center;
+  border:0;
+}
+.inputs {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  backround: cyan;
+}
+
+
+.inputs2 {
+  width:100%;
+  margin-top: 50px;
+  backround: cyan;
+  
+}
+
+.inputs2 input{
+  width: 60%;
+  padding: 10px;
+ border: 1px solid cyan;
+  border-radius: 5px;
+}
+
+.inputs input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid cyan;
+  border-radius: 5px;
+}
+
+button {
+  width: 50%;
+  padding: px;
+  margin: 5px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+ 
+}
+
+button:hover{
+transition: 0.40s;
+background: #252d38;
+color: white;
+border: 2px solid CYAN;
+}
+
+.pebox{
+  
+  height: 40px;
+  border: 0;
+  background: #252d38;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+
+.off{
+ backround: cyan;
+ margin: auto;
+ width: 50px;
+}
+
+hr{
+  width: 270px;
+  margin-top: 3px;
+  border-color: cyan;
+}
+
+
+
+
+#top-in{
+  width: 50px;
+  cursor: pointer;
+  padding-top: 8px;
+ margin-left: 89%;
+ 
+}
+
+</style>
+<body>
+
+  
+    
+    <div id="top-in"><a href="about.html"><img src="images/about-01.png" width="100%"></a></div>
+  
+
+
+
+
+<div class="calculator">
+  
+  <div class="inputs">
+    <input type="text" id="percent" class="pebox" placeholder="X%">
+   
+  </div>
+
+    
+
+    <p style="color: white;">Percent</p>
+
+    <div class="off"><p style="color: white;  margin-top: 50px; ;">of</p></div>
+
+
+
+    <div class="inputs2">
+    
+      <input type="text" id="number" class="pebox" placeholder="ADD TO Y">
+    </div>
+  
+     
+
+      <p style="color: white;">Number</p>
+    
+ 
+
+ 
+
+  <div class="display">
+    <br/>
+    <input type="text" id="result" class="pebox" value=""readonly>
+    
+  </div>
+   
+
+ 
+  <button id="get-result"><h2>GET RESULT</h2></button>
+
+
+</div>
+<script>
+    const resultDisplay = document.getElementById('result');
+const percentInput = document.getElementById('percent');
+const numberInput = document.getElementById('number');
+const getResultButton = document.getElementById('get-result');
+
+
+getResultButton.addEventListener('click', () => {
+  const percent = parseFloat(percentInput.value);
+  const number = parseFloat(numberInput.value);
+  const result =  (percent * number / 100);
+  resultDisplay.value = result.toFixed(2);
+});
+</script>
+</body>
+</html>
