@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Drawing App</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            touch-action: none;
+        }
+
+        html{
+    scroll-behavior:smooth;
+    animation:opacity 3s;
+    }
+    
+    @Keyframes opacity{
+        from{ opacity: 0%;}
+        to{opacity: 100%;}
+        }
+
+
+        #controls {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background:url(bg2.jpg);
+            background-size:cover;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1000;
+            box-sizing: border-box;
+            backround: pink;
+        }
+
+        button, input[type="range"], input[type="color"] {
+            padding: 10px;
+            font-size: 12px;
+            margin: 1px;
+            border-radius: 100px;
+            border: none;
+            border: 1px solid white;
+            cursor: pointer;
+            background-color: #7EB5DC;
+            color: white;
+            outline: none;
+        }
+
+
+        #but{
+            width: 40px;
+            //padding: 10px;
+            font-size: 12px;
+            margin: 1px;
+            border-radius: 100px;
+            border: none;
+            border: 1px solid white;
+            cursor: pointer;
+            background-color: #7EB5DC;
+            color: white;
+            outline: none;
+        }
+
+        #mycolor
+        {
+            background: #7EB5DC;
+        }
+
+        button:active, button:focus {
+            outline: none;
+        }
+
+        #myerase {
+            background-color: #7EB5DC;
+        }
+
+        canvas {
+            width: 95%;
+           
+            margin-top: 27px;
+            margin-left: 12px;
+            touch-action: none;
+            position: absolute;
+            top: 60px; /* Adjust based on controls height */
+            left: 0;
+            background-color:white;
+        }
+
+     .bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#cartoon{
+    width: 200px;
+    height: 200px;
+    backround: red;
+    position: absolute;
+    z-index: 2;
+    margin-top: 510px;
+    margin-left: -40px;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <img class="bg" src="images/drawbg-01-01.jpg">
+    </div>
+
+<div id="controls">
+    <div id="but"><a href="intro.html"><img src="images/back-01.png" width="100%"></a> </div>
+    <button onclick="selectobject('myline')">Line</button>
+    <button onclick="selectobject('circle')">Circle</button>
+    <button onclick="selectobject('rectangle')">Rectangle</button>
+    <button onclick="drawfill()">Fill/Unfill</button>
+    <button id="myerase">Clear Canvas</button>
+    <button onclick="savedraw()">Save</button>
+    <input type="range" min="1" max="100" id="bsize" value="10">
+    <input type="color" id="mycolor" value="#000000">
+</div>
+
+<div id="cartoon">
+    <img src="images/dino2.png" width="100%">
+</div>
+
+<canvas id="drawingCanvas"></canvas>
+
+
+
+
+
+
+<script>
+    const canvas = document.getElementById("drawingCanvas");
+    const bsize = document.getElementById("bsize");
+    const dcolor = document.getElementById("mycolor");
+    const eraseBtn = document.getElementById("myerase");
+
+    let drawcolor = dcolor.value;
+    let lw = bsize.value;
+    let drawobjectsize = 10;
+    let drawingobject = "myline";
+    let md = false;
+    let f = false;  
+
+    const ctx = canvas.getContext("2d");
+
+    // Resize the canvas to fit the window
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight - document.getElementById('controls').offsetHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();  // Initial resize
+
+    // Select drawing object
+    function selectobject(dob) {
+        drawingobject = dob;
+    }
+
+    // Toggle fill/unfill mode
+    function drawfill() {
+        f = !f;
+    }
+
+    // Save the drawing as an image
+    function savedraw() {
+        const fname = prompt("File name.. File will be saved in png format", "mydraw");
+        const dataURL = canvas.toDataURL();
+        const link = document.createElement("a");
+        link.download = fname;
+        link.href = dataURL;
+        link.click();
+    }
+
+    // Update color and line width
+    dcolor.onchange = function() {
+        drawcolor = dcolor.value;
+    };
+
+    bsize.onchange = function() {
+        lw = bsize.value;
+    };
+
+    // Touch start event
+    canvas.addEventListener("touchstart", function(e) {
+        md = true;
+        const touch = e.touches[0];
+        ctx.beginPath();
+        ctx.moveTo(touch.clientX, touch.clientY);
+        e.preventDefault();  // Prevent scrolling while drawing
+    });
+
+    // Touch move event
+    canvas.addEventListener("touchmove", function(e) {
+        if (md) {
+            const touch = e.touches[0];
+            if (drawingobject === "myline") {
+                ctx.lineTo(touch.clientX, touch.clientY);
+                ctx.strokeStyle = drawcolor;
+                ctx.lineWidth = lw;
+                ctx.stroke();
+            } else if (drawingobject === "circle") {
+                ctx.beginPath();
+                ctx.arc(touch.clientX, touch.clientY, drawobjectsize, 0, 2 * Math.PI);
+                if (f) {
+                    ctx.fillStyle = drawcolor;
+                    ctx.fill();
+                } else {
+                    ctx.strokeStyle = drawcolor;
+                    ctx.stroke();
+                }
+            } else if (drawingobject === "rectangle") {
+                ctx.beginPath();
+                if (f) {
+                    ctx.fillStyle = drawcolor;
+                    ctx.fillRect(touch.clientX, touch.clientY, drawobjectsize, drawobjectsize);
+                } else {
+                    ctx.strokeStyle = drawcolor;
+                    ctx.strokeRect(touch.clientX, touch.clientY, drawobjectsize, drawobjectsize);
+                }
+            }
+        }
+        e.preventDefault();  // Prevent scrolling while drawing
+    });
+
+    // Stop drawing on touch end
+    canvas.addEventListener("touchend", function() {
+        md = false;
+    });
+
+    // Clear the canvas
+    eraseBtn.onclick = function() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    };
+
+
+
+
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    html{
+    scroll-behavior:smooth;
+    animation:opacity 3s;
+    }
+    
+    @Keyframes opacity{
+        from{ opacity: 0%;}
+        to{opacity: 100%;}
+        }
+
+ .back{
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    position: fixed;
+    z-index: -2;
+  
+ }
+
+ .pic{
+    width:100%;
+    height:98%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+
+ }
+
+ .text{
+    width: 320px;
+    height: 70px;
+    backround: yellow;
+    margin-left: 100px;
+    position:absolute;
+    margin-top: 130px;
+    
+ }
+
+ #dintext{
+    padding-top: 12px;
+    text-align: center;
+    color: white;
+ }
+ 
+
+ .button{
+    width: 170px;
+    height: 60px;
+    background: #98C7E5;
+    position: absolute;
+    margin-top: 610px;
+    margin-left: 130px;
+    border-radius: 100px;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+ }
+
+ .button:hover{
+    transition: 0.50s;
+    background: white;
+    color: #98C7E5;
+    border: 3px solid #98C7E5;
+ }
+
+ #top-in{
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 89%;
+  margin-top:10px;
+  //background: pink;
+  border-radius: 100px;
+  
+}
+
+
+
+
+</style>
+
+<body>
+
+
+    <div class="back">
+       <img  class="pic" src="images/dino.jpg" >
+    </div>
+
+
+    <div id="top-in"><a href="about.html"><img src="images/about-01-01.png" width="100%"></a></div>
+
+
+    <div class="text">
+        <h1 id="dintext">Let's draw with Dino!</h1>
+    </div>
+    
+
+    <a href="drawing.html">
+    <div class="button">
+        <h1 style="padding: 10px;">Start</h1>
+    </div></a>
+</body>
+</html>
