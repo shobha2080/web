@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<style>
+#card{
+width:20%;
+height:580px;
+box-shadow:10px 10px 10px gray;
+padding:20px;
+
+}
+#card p{text-align:center;background:gray;padding:2px;
+    cursor:pointer;
+
+}
+.pic{
+width:100%;
+height:400px;
+position:relative;
+}
+#card ul li
+{
+list-style:none;
+
+}
+#p1{
+ opacity:1;   
+}
+#p2{
+margin-top:-400px;
+//opacity:0.10;
+}
+
+
+</style>
+
+
+<body>
+<h1>Jquery Fade in out to toggle function</h1>
+
+<div style="display: flex;">
+<div id="card">
+    <img id="p1" src="images/jq4.jpg" class="pic">
+    <img id="p2" src="images/jq5.jpg" class="pic">
+<p>Detail</p>
+<ul>
+<li>Product Name : Cotton Shirt</li>
+<li>Product Price : 2500</li>
+<li>Discount : 50%</li>
+<li><button>+</button><input style="width:15px" type="text" value="1"></li>
+<li><button style="padding:5px;width:50px;background:rgb(216, 60, 17);">Add</button></li>
+</ul>
+
+
+</div>  
+
+
+<div id="card">
+  <img id="p1" src="images/jq7.jpg" class="pic">
+  <img id="p2" src="images/jq6.jpg" class="pic">
+<p>Detail</p>
+<ul>
+<li>Product Name : Cotton Shirt</li>
+<li>Product Price : 2500</li>
+<li>Discount : 50%</li>
+<li><button>+</button><input style="width:15px" type="text" value="1"></li>
+<li><button style="padding:5px;width:50px;background:rgb(216, 60, 17);">Add</button></li>
+</ul>
+
+
+</div> 
+
+</div>
+<script>
+    $("ul").fadeOut(0)
+    //$(".pic").fadeTo(0,0.50)
+    
+    $(document).ready(function()
+    {
+      
+        $("#p2").click(function()
+          {
+            $("#p2").fadeToggle()
+            //alert("clikc")
+        
+          
+          })
+
+
+          $("#p1").click(function()
+          {
+            $("#p2").fadeToggle()
+            //alert("clikc")
+        
+          
+          })
+
+          $(".pic").mouseout(function()
+          {
+            //$(".pic").fadeTo(1000,0.50)
+          })
+
+
+        $("#card p").click(function()
+            {
+               // $("ul").fadeIn(500)
+                $("ul").toggle(1000)
+            })
+
+            $("#card p").mouseover(function()
+            {
+                $("ul").fadeIn(1000)
+            })
+
+
+    })
+    document.title ="No Error"
+    
+    </script>   
+
+
+
+
+    
+</body>
+</html>

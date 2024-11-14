@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+    body{
+        text-align:center;
+    }
+
+   #pic
+   {
+    width:40%;
+    box-shadow:10px 10px 10px gray;
+   } 
+   #b1:hover{cursor:pointer}
+</style>
+<body>
+
+<div>
+<button id="b1">Hide</button>
+<br/>
+<img src = "images/jq3.jpg" id="pic">
+</div>
+<script>
+    var b = document.getElementById("b1")
+    var pic= document.getElementById("pic")
+
+
+$(document).ready(function()
+{
+            $("#b1").click(function()
+                {
+                  
+            $("#pic").toggle(1000,myaction)
+
+                }
+
+                )
+
+
+
+})
+function myaction()
+{
+
+   if(b.innerHTML==="Hide")
+        {
+            b.innerHTML="Show"
+
+
+           
+            if( pic.src=="http://127.0.0.1:5501/images/jq2.jpg")
+                {
+                 pic.src="images/p1.jpg"
+                }
+                else
+                {
+                     pic.src="images/p4.jpg"
+                } 
+        
+        
+        }
+
+
+        else
+        {
+            b.innerHTML="Hide"
+            
+
+        }
+    
+}
+
+document.title="Ready"
+
+</script>
+    
+</body>
+</html>
