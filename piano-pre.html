@@ -15,183 +15,175 @@
         text-decoration: none;
     }
 
-    .bg{
-        width: 100%;
-        
+    body{
+        a:link{color:black; text-decoration: none;}
+        a:visited{color: black; text-decoration: none;}
+        a:active{}
     }
 
-    .pic{
+    #main{
         width: 100%;
+    }
+
+    #try{
+        width: 15%;
         position: absolute;
-        z-index: -1;
+        z-index: 3;
+        top: 67%;
+        left: 79%;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 1px solid black;
+        display: grid;
+        background: #ffffff;
+        grid-template-columns: repeat(30px);
+        grid-template-rows: 40px;
+        gap: 5px;
+        align-items: center;
+        border-radius: 10px;
+        transition: 0.50s;
     }
 
-    .main{
-        width: 100%;
-        height: 8000px;
-        backround: pink;
+    #try:hover{
+        transform: scale(1.10);
+        letter-spacing: 5px;
     }
 
-    .main-in{
-        width: 100%;
-        height: 11%;
-        backround: red;
-        display: flex;
-        justify-content: space-around;
-
+    #dow:hover{
+        transform: scale(1.10);
+        letter-spacing: 5px;
     }
 
-    .main-in2{
-        width: 40%;
-        height: 100%;
-        backround: greenyellow;
+    #dow{
+        width: 15%;
+        position: absolute;
+        z-index: 3;
+        top: 67%;
+        left: 62%;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 1px solid black;
+        display: grid;
+        background: #ffffff;
+        grid-template-columns: repeat(30px);
+        grid-template-rows: 40px;
+        border-radius: 10px;
+        gap: 5px;
+        align-items: center;
+        transition: 0.50s;
     }
 
-
-    .main-in-2{
-        width: 100%;
-        height: 9%;
-        //border: 3px solid red;
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    .main-in-22{
-        width: 40%;
-        height: 100%;
-        //border: 3px solid greenyellow;
-    }
-
-    .butt{
-        width: 100%;
-        height: 80%;
-        //border: 3px solid ;
-        
-    }
-
-
-    .butt-box{
-        width: 100%;
-        height: 63%;
-        //border: 3px solid gray;
-        
-    }
-
-
-    .butt2{
-        width: 100%;
-        margin-top: -100px;
-        backround: blue;
-       
-    }
-
-    .butttt{
-        width: 100%;
-        margin-top: -320px;
-        backround: blue;
-       
-    }
-
- .button{
-  border: 3px solid #ffffff;
-  margin-left: 30%;
-  display: grid;
-  width: 300px;
-  grid-template-columns: repeat(30px);
-  grid-template-rows: 40px;
-  gap: 5px;
-  
- 
+    #about
+{
+    width: 90%;
+    height: 700px;
+    //background-color: #976635;
+    position: absolute;
+    z-index: 3; 
+    top: 380%;
+    left: 5%;
+    display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
 }
-
- .button button:hover{
-  letter-spacing: 5px;
+#vid
+{
+    width: 50%;
+    height: 700px;
+    //background-color: #359766;
+    brder: 1px solid #976635;
+    align-items: center;
 }
 
 
-#text{
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 280px;
+#video{
+    width:40%;
+    margin-left: 150px;
+    margin-top: 50px;
+    border-radius: 40px;
+    
     
 }
+
+h1{
+    color: #000000;
+    //text-align: center;
+    margin-top: 300px;
+}
+
+#dow2{
+        
+        top: 55%;
+        left: 65%;
+        width: 15%;
+        position: absolute;
+        z-index: 3;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 1px solid black;
+        display: grid;
+        background: #ffffff;
+        grid-template-columns: repeat(30px);
+        grid-template-rows: 40px;
+        border-radius: 10px;
+        gap: 5px;
+        align-items: center;
+        transition: 0.50s;
+    }
+
+    #dow2:hover{
+        transform: scale(1.10);
+        letter-spacing: 5px;
+    }
+    
+
+ 
     
    
 </style>
 
 
 <body>
-    
-    <div class="bg">
 
-        <img src="tunes/draw app interface-03.jpg" class="pic">
+    <div id="main">
+        <img src="tunes/draw app interface-03.jpg" width="100%">
+    </div>
 
-
-
-        <div class="main">
-
-            <div class="main-in">
-                <div class=" main-in2"></div>
-
-                <div class=" main-in2">
-                    <div class="butt">
-                        
-                    </div>
-
-                    <div class="butt2">
-
-                       <a href="piano.html">
-                       <div class="button"><button> TRY NOW </button></div> 
-                      </a>
-
-                    </div>
-                </div>
-            </div>
+       
+          <a href="Piano_1_1.0.apk"><div id="try"> DOWNLOAD </div></a>
+          <a href="piano.html"><div id="dow"> try now</div></a>
+      
 
 
-
-
-
-            <div style="height: 2200px; border:px solid cyan;"></div>
-
-
-
-            <div class="main-in-2">
-                <div class=" main-in-22"></div>
-
-                <div class=" main-in-22">
-                    <div class="butt-box">
-                        <h1 id="text">Click here to download the app</h1>
-                    </div>
-
-                    <div class="butttt">
-
-                        <a href="PianoZen_1_1.0.apk">
-                       <div class="button"><button>  DOWNLOAD </button></div> 
-                       </a>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div></div>
-            
+    <div id="about">
+        <div id="vid">
+            <video id="video" autoplay loop muted>
+                <source src="tunes/vid-piano.mp4"/>
+                Your browser does not support video
+            </video>
         </div>
 
+        <div id="vid">
+
+            <h1>CLICK HERE TO DOWNLOAD THE APP.</h1>
 
 
-
-
+            <a href="Piano_1_1.0.apk"><div id="dow2"> Download </div></a>
         
-
-    </div>
     
-   
-</body>
 
+
+
+        </div>
+    </div>
+
+
+
+</body>
 
 </html>
