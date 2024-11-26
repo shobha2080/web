@@ -13,37 +13,28 @@ body {
     align-items: center;
 }
 
+
 .back{
-    width: 600px;
-    height: 100vh;
-    background: red;
-    margin:auto;
-    position: absolute;
-    z-index: -3;
-   
-  
- }
-
-
-.bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -3;
+    width: 37%;
+    margin: auto;
 }
+
+.back2{
+    width: 34%;
+    margin: auto;
+}
+
+
 
 
 
 .main{
     width: 100%;
-   // height: 100vh;
     backround: red;
-    padding: 100px 0; 
-    margin-top: 500px;
-    position: relative;
+    //padding: 100px 0; 
+    position:absolute;
+    top: 60%;
+    left: 0%;
 }
 
 .main-in{
@@ -73,37 +64,41 @@ body {
 }
 .fff{
    backround: pink;
-   margin: 180px 305px;
    width: 170px;
-   position: fixed;
- }
+   position: absolute;
+   top: 19.3%;
+   left: 50.4%;
+}
 
  .icon{
-    width: 30px;
+    width: 40px;
     height: 0px;
-    backround: yellow;
-    margin: 15px 15px;
+    background: yellow;
+    position: absolute;
     cursor: pointer;
-    position: fixed;
+    top: 3%;
+    left: 34%;
+    
  }
  
  label{
      margin:2px;
-     font-size: 22px;
+     font-size: 15px;
      color:black;
  }
  
  #output
- {width:100%;
- height:96%;
- margin-left: 3%;
- margin-top: 450px;
- line-height: 40px;
- font-size:30px;
+ {width:15%;
+ //height:90%;
+ //background: cyan;
+ line-height: 34px;
+ font-size:20px;
  letter-spacing: 5px;
  color:#ffffff;
  font-family:arial black;
- position: fixed;
+ position: absolute;
+ top: 50%;
+ left: 43%;
 
  }
 

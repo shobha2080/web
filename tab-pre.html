@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+
+    body{
+        a:link{color:black; text-decoration: none;}
+        a:visited{color: black; text-decoration: none;}
+        a:active{}
+    }
+
+    #main{
+        width: 100%;
+    }
+
+    #try{
+        width: 15%;
+        position: absolute;
+        z-index: 3;
+        top: 70%;
+        left: 77%;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 1px solid black;
+        display: grid;
+        background: #ffffff;
+        grid-template-columns: repeat(30px);
+        grid-template-rows: 40px;
+        gap: 5px;
+        align-items: center;
+        border-radius: 10px;
+        transition: 0.50s;
+    }
+
+    #try:hover{
+        transform: scale(1.10);
+        letter-spacing: 5px;
+    }
+
+    #dow:hover{
+        transform: scale(1.10);
+        letter-spacing: 5px;
+    }
+
+    #dow{
+        width: 15%;
+        position: absolute;
+        z-index: 3;
+        top: 70%;
+        left: 61%;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 1px solid black;
+        display: grid;
+        background: #ffffff;
+        grid-template-columns: repeat(30px);
+        grid-template-rows: 40px;
+        border-radius: 10px;
+        gap: 5px;
+        align-items: center;
+        transition: 0.50s;
+    }
+
+    #about
+{
+    width: 90%;
+    height: 700px;
+    //background-color: #976635;
+    position: absolute;
+    z-index: 3; 
+    top: 650%;
+    left: 5%;
+    display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+#vid
+{
+    width: 50%;
+    height: 700px;
+    //background-color: #359766;
+    brder: 1px solid #976635;
+    align-items: center;
+}
+
+
+#video{
+    width:40%;
+    margin-left: 150px;
+    margin-top: 60px;
+    border-radius: 40px;
+    
+    
+}
+
+h1{
+    color: #ffffff;
+    //text-align: center;
+    margin-top: 300px;
+}
+
+#dow2{
+        
+        top: 55%;
+        left: 65%;
+        width: 15%;
+        position: absolute;
+        z-index: 3;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 1px solid black;
+        display: grid;
+        background: #ffffff;
+        grid-template-columns: repeat(30px);
+        grid-template-rows: 40px;
+        border-radius: 10px;
+        gap: 5px;
+        align-items: center;
+        transition: 0.50s;
+    }
+
+    #dow2:hover{
+        transform: scale(1.10);
+        letter-spacing: 5px;
+    }
+    
+
+ 
+    
+   
+</style>
+
+
+<body>
+
+    <div id="main">
+        <img src="images/draw app interface-04.jpg" width="100%">
+    </div>
+
+       
+          <a href="Table Master_1_1.0.apk"><div id="try"> DOWNLOAD </div></a>
+          <a href="start.html"><div id="dow"> try now</div></a>
+      
+
+
+    <div id="about">
+        <div id="vid">
+            <video id="video" autoplay loop muted>
+                <source src="images/vid-table.mp4"/>
+                Your browser does not support video
+            </video>
+        </div>
+
+        <div id="vid">
+
+            <h1>CLICK HERE TO DOWNLOAD THE APP.</h1>
+
+
+            <a href="Dino Draw_1_1.0.apk"><div id="dow2"> Download </div></a>
+        
+    
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
