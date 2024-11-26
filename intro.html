@@ -25,100 +25,86 @@
         to{opacity: 100%;}
         }
 
- .back{
-    width: 500px;
-    height: 100vh;
-    background: red;
-    margin:auto;
-   
-  
- }
+   .bg{
+      width: 34%;
+      margin: auto;
+   }
 
- .pic{
-    width:100%;
-    height:100%;
-    
-    object-fit: cover;
-   
- }
+   .icon{
+      width: 3%;
+      height: 5%;
+      backround: pink;
+      position: absolute;
+      top: 5%;
+      left: 62%;
+      transform: 0.50s;
+      cursor: pointer;
 
- .text{
-    width: 320px;
-    height: 70px;
-    backround: yellow;
-    margin-left: 105px;
-    position:relative;
-    margin-top: 120px;
-    
- }
+   }
 
- #dintext{
-    padding-top: 12px;
-    text-align: center;
-    color: white;
- }
- 
+   .icon:hover{
+      transform: scale(1.10);
+   }
 
- .button{
-    width: 170px;
-    height: 60px;
-    background: #98C7E5;
-    position: relative;
-    margin-top: 530px;
-    margin-left: 130px;
-    border-radius: 100px;
-    
-    border: 3px solid white;
-    color: white;
-    text-align: center;
-    cursor: pointer;
- }
+   .text{
+      backround: yellow;
+      width: 20%;
+      text-align: center;
+      position: absolute;
+      top: 20%;
+      left: 40.6%;
+      color: white;
+      
+   }
 
- .button:hover{
-    transition: 0.50s;
-    background: white;
-    color: #98C7E5;
-    border: 3px solid #98C7E5;
- }
+   .button{
+      width: 6%;
+      background: #77B1DA;
+      text-align: center;
+      position: absolute;
+      top: 85%;
+      left: 45%;
+      padding: 15px;border-radius: 100px;
+      border: 2px solid white;
+      color: white;
+      transition: 0.50s;
+      cursor: pointer;
+    }
 
- #top-in{
-  width: auto;
-  height: auto;
-  cursor: pointer;
-  position: relative;
-  margin-left: 89%;
-  margin-top:-900px;
-  //background: pink;
-  border-radius: 100px;
-  
-}
-
-
+    .button:hover{
+        transform: scale(1.10);
+        background: white;
+        border: 2px solid #5092c1;
+       color: #77B1DA;
+    }
 
 
 </style>
 
 <body>
 
+   <div class="bg">
+      <img src="images/dino.jpg"  width="100%">
+   </div>
 
-    <div class="back">
-       <img  class="pic" src="images/dino.jpg" >
     
+   <a href="about.html">
+   <div class="icon">
+
+      <img src="images/about-01-01.png" width="100%">
+
+   </div></a>
 
 
-    <div id="top-in"><a href="about.html"><img src="images/about-01-01.png" width="100%"></a></div>
-
-
-    <div class="text">
-        <h1 id="dintext">Let's draw with Dino!</h1>
-    </div>
-    
+   <div class="text"><h1>Let's draw with dino!</h1></div>
 
     <a href="drawing.html">
-    <div class="button">
-        <h1 style="padding: 10px;">Start</h1>
-    </div></a>
+   <div class="button">
+      <h1>Start</h1>
+   </div></a>
 
-   </div>    
+   
+
+       
 </body>
 </html>
