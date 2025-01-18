@@ -118,6 +118,23 @@ text-align: center;
     justify-content: space-around;
 }
 
+.mod-top-text{
+   font-weight: 6000;
+}
+.ser-logo-box{
+   width: 10%; 
+   padding-left: 10px;
+}
+
+.htw-contant{
+    font-weight: 600; 
+    margin-top: 22px;
+}
+
+.gti-text{
+    font-size: 50px;
+}
+
 .offer-box{
     width: 70%;
     
@@ -131,6 +148,14 @@ text-align: center;
     width: 50%;
     color: white;
     padding: 40px;
+}
+
+.nnn-para{
+    margin-top: 15px;
+}
+
+.xxx{
+    display: none;
 }
 
 /*projects*/
@@ -365,7 +390,118 @@ text-align: center;
     .ggg{
         margin-left: -150px;
     }
+
+    /* service */
+    .servi-info{
+        width: 90%;
+        height: auto;
+        background: rgb(220, 219, 219);
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ser-extra-div{
+        margin-top: 25%;
+    }
+
+    .mod-top-text{
+        font-size: 15px;
+    }
+    .mod-top-para{
+        font-size: 10px;
+        margin-top: -10%;
+    }
+
+    .xxx{
+        display: block;
+        font-size: 10px;
+        margin-top: 10px;
+    }
     
+
+    .ser-logo-img{
+        width: 950%; 
+        margin-top: -15px;
+
+        
+     }
+     .offer-box{
+        width: 70%;
+        height: auto;
+        background-color: #00171f;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+    }
+     .mod-top-text2{
+        font-size: 15px;
+        margin-left: 30px;
+        
+    }
+
+    .mod-top-text3{
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: -10px;
+        
+    }
+    .mar-extra{
+        margin-top: 25px;
+    }
+
+    .paddioc{
+        padding-top: 10px;
+    }
+
+    .mar-extra2{
+        margin-top: -20px;
+    }
+
+    .htw-contant{
+        font-weight: 600; 
+        margin-top: 0px;
+    }
+
+    .padd{
+        padding: 10px;
+    }
+    
+    .gti-text{
+        font-size: 15px;
+        margin-top: px;
+    }
+
+    .tmo-para{
+        font-size: 12px;
+    }
+
+    .offer-box{
+        width: 80%;
+        
+        background-color: #00171f;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+    }
+    
+    .offer-box-in{
+        width: 70%;
+        color: white;
+        padding: 10px;
+    }
+
+    .lll{
+        font-size: 12px;
+        padding: 10px px 10px px;
+        margin-top: -20px;
+        width: 80;
+    }
+
+    
+
+   
     
     
 }
@@ -374,6 +510,10 @@ text-align: center;
 @media only screen and (min-width: 600px) {
     body{
         //background: pink;
+       }
+
+       .getSer{
+        font-size: 12px;
        }
     
        .module{
@@ -519,6 +659,108 @@ text-align: center;
     .ggg{
         margin-left: -120px;
     }
+
+
+    /* service */
+    .servi-info{
+        width: 90%;
+        height: auto;
+        background: rgb(220, 219, 219);
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ser-extra-div{
+        margin-top: 25%;
+    }
+
+    .mod-top-text{
+        font-size: 15px;
+    }
+    .mod-top-para{
+        font-size: 10px;
+        margin-top: -10%;
+    }
+
+    .xxx{
+        display: block;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    
+
+    .ser-logo-img{
+        width: 450%; 
+        margin-top: -15px;
+
+        
+     }
+     
+     .mod-top-text2{
+        font-size: 15px;
+        margin-left: 30px;
+        
+    }
+
+    .mod-top-text3{
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: -10px;
+        
+    }
+    .mar-extra{
+        margin-top: 25px;
+    }
+
+    .paddioc{
+        padding-top: 10px;
+    }
+
+    .mar-extra2{
+        margin-top: -20px;
+    }
+
+    .htw-contant{
+        font-weight: 600; 
+        margin-top: 0px;
+    }
+
+    .padd{
+        padding: 10px;
+    }
+    
+    .gti-text{
+        font-size: 15px;
+        margin-top: px;
+    }
+
+    .tmo-para{
+        font-size: 12px;
+    }
+
+    .offer-box{
+        width: 80%;
+        
+        background-color: #00171f;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+    }
+    
+    .offer-box-in{
+        width: 65%;
+        color: white;
+        padding: 20px;
+    }
+
+    .lll{
+        font-size: 12px;
+        padding: 10px px 10px px;
+        margin-top: -20px;
+        width: 80;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -654,12 +896,130 @@ text-align: center;
     .ggg{
         margin-left: -100px;
     }
+
+    /* service */
+    .servi-info{
+        width: 90%;
+        height: auto;
+        background: rgb(220, 219, 219);
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ser-extra-div{
+        margin-top: 15%;
+    }
+
+    .mod-top-text{
+        font-size: 20px;
+    }
+    .mod-top-para{
+        font-size: 12px;
+        margin-top: -10%;
+    }
+
+    .xxx{
+        display: block;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+
+    .ser-logo-img{
+        width: 450%; 
+        margin-top: -15px;
+
+        
+     }
+     
+     .mod-top-text2{
+        font-size: 20px;
+        margin-left: 50px;
+        margin-top: 8px;
+        
+    }
+
+    .mod-top-text3{
+        font-size: 20px;
+        margin-left: 55px;
+        margin-top: -10px;
+        
+    }
+    .mar-extra{
+        margin-top: 25px;
+    }
+
+    .paddioc{
+        padding-top: 0px;
+    }
+
+    .paddioc2{
+        padding-top: 15px;
+    }
+
+    .mar-extra2{
+        margin-top: -20px;
+    }
+
+    .htw-contant{
+        font-weight: 600; 
+        margin-top: 0px;
+    }
+
+    .nnn-para{
+        font-size: 10px;
+        margin-top: 0px;
+        
+    }
+
+    .padd{
+        padding: 10px;
+    }
+    
+    .gti-text{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .tmo-para{
+        font-size: 15px;
+    }
+
+    .offer-box{
+        width: 80%;
+        
+        background-color: #00171f;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+    }
+    
+    .offer-box-in{
+        width: 65%;
+        color: white;
+        padding: 20px;
+    }
+
+    .lll{
+        font-size: 12px;
+        padding: 10px px 10px px;
+        margin-top: -20px;
+        width: 80;
+    }
+
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     body{
        //background: yellow;
+       }
+
+       .getSer{
+        font-size: 10px;
        }
     
        .module{
@@ -789,6 +1149,131 @@ text-align: center;
     .ggg{
         margin-left: -100px;
     }
+
+    /* service */
+    .servi-info{
+        width: 90%;
+        height: auto;
+        background: rgb(220, 219, 219);
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ser-extra-div{
+        margin-top: 15%;
+    }
+
+    .mod-top-text{
+        font-size: 25px;
+    }
+    .mod-top-para{
+        font-size: 15px;
+        margin-top: 0%;
+    }
+
+    .xxx{
+        display: none;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+
+    .ser-logo-img{
+        width: 180%; 
+        margin-top: -15px;
+
+        
+     }
+     
+     .mod-top-text2{
+        font-size: 18px;
+        margin-left: 40px;
+        margin-top: 5px;
+        
+    }
+
+    .mod-top-text3{
+        font-size: 18px;
+        margin-left: 40px;
+        margin-top: 0px;
+        
+    }
+    .mar-extra{
+        margin-top: 25px;
+    }
+
+    .paddioc{
+        padding-top: 0px;
+    }
+
+    .paddioc2{
+        padding-top: 15px;
+    }
+
+    .mar-extra2{
+        margin-top: -15px;
+    }
+
+    .htw-contant{
+        font-weight: 600; 
+        padding-top: 15px;
+    }
+
+    .nnn-para{
+        font-size: 12px;
+        margin-top: 0px;
+        
+    }
+
+    .padd{
+        padding: 10px;
+    }
+
+    .ooo{
+        padding-bottom: 20px;
+    }
+    
+    .gti-text{
+        font-size: 35px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .tmo-para{
+        font-size: 15px;
+    }
+
+    .offer-box{
+        width: 60%;
+        
+        background-color: #00171f;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+    }
+    
+    .offer-box-in{
+        width: 55%;
+        color: white;
+        padding: 20px;
+    }
+
+    .lll{
+        font-size: 12px;
+        padding: 10px px 10px px;
+        margin-top: -20px;
+        width: 80;
+    }
+
+    .klkl{
+        margin-left: -20px;
+    }
+
+    .plpl{
+        margin-top: -10px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -796,11 +1281,15 @@ text-align: center;
     body{
         //background-color: orange;
     }
+
+    .getSer{
+        font-size: 15px;
+    }
     .module{
         width: 45%;
         text-shadow: 0px 0px 5px black;;
         position: absolute;
-        top: 27%;
+        top: 30%;
         left: 28%;
         color: #f8f8f8;
         text-align: center;
@@ -895,6 +1384,133 @@ text-align: center;
 
     .ggg{
         margin-left: 5px;
+    }
+
+    /* service */
+    .servi-info{
+        width: 78%;
+        height: auto;
+        background: rgb(220, 219, 219);
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ser-extra-div{
+        margin-top: 8%;
+    }
+
+    .mod-top-text{
+        font-size: 30px;
+    }
+    .mod-top-para{
+        font-size: 17px;
+        margin-top: 0%;
+    }
+
+    .xxx{
+        display: none;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+
+    .ser-logo-img{
+        width: 150%; 
+        margin-left: -30px;
+        margin-top: -15px;
+
+        
+     }
+     
+     .mod-top-text2{
+        font-size: 18px;
+        margin-left: -50px;
+        margin-top: 3px;
+        
+    }
+
+    .mod-top-text3{
+        font-size: 18px;
+        margin-left: -43px;
+        margin-top: 0px;
+        
+    }
+    .mar-extra{
+        margin-top: 25px;
+    }
+
+    .paddioc{
+        padding-top: 0px;
+    }
+
+    .paddioc2{
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .mar-extra2{
+        margin-top: 20px;
+    }
+
+    .htw-contant{
+        font-weight: 600; 
+        padding-top: 15px;
+    }
+
+    .nnn-para{
+        font-size: 12px;
+        margin-top: 0px;
+        
+    }
+
+    .padd{
+        padding: 10px;
+    }
+
+    .ooo{
+        padding-bottom: 20px;
+    }
+    
+    .gti-text{
+        font-size: 45px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .tmo-para{
+        font-size: 15px;
+    }
+
+    .offer-box{
+        width: 60%;
+        
+        background-color: #00171f;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+    }
+    
+    .offer-box-in{
+        width: 55%;
+        color: white;
+        padding: 20px;
+    }
+
+    .lll{
+        font-size: 15px;
+        padding: 10px px 10px px;
+        margin-top: 0px;
+        width: 80;
+    }
+
+    .klkl{
+        margin-left: -100px;
+    }
+
+    .plpl{
+        margin-top: -10px;
     }
     
 }
