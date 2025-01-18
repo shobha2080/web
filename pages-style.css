@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  text-decoration: none;
+}
+body{
+ background-color: #ffffff;
+}
+
+html{
+    scroll-behavior:smooth;
+    animation:opacity 3s;
+    }
+    
+    @Keyframes opacity{
+        from{ opacity: 0%;}
+        to{opacity: 100%;}
+        }
+
+.module{
+width: 45%;
+text-shadow: 0px 0px 5px black;;
+position: absolute;
+top: 27%;
+left: 28%;
+color: #f8f8f8;
+text-align: center;
+}
+
+
+.our-mod{
+    
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.modd{
+    margin-top: 6%;
+}
+
+.key-feature-box{
+    width: 100%;
+    margin-top: 10%;
+   
+}
+
+.mod-mech{
+   font-size: 30px; 
+   font-weight: 600; 
+   color: white;
+}
+
+.key-add{
+    font-weight: 600;
+     margin-top: 25px;
+}
+
+.mod-img{
+    width: 100%;
+    position: absolute;
+    z-index: -3;
+
+}
+
+.key-head{
+   
+    width: auto;
+   
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    padding-top: 35px
+}
+
+.key-contant-box{
+    width: 100%;
+    
+    flex-wrap: flex;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.key-contant-box-in{
+    width: 20%;
+    height: 100%;
+    //background: magenta;
+    text-align: center;
+    color: #f8f8f8;   
+}
+
+.key-img-box{
+    width: 40%;
+    //background: maroon;
+    margin: auto;  
+    
+}
+
+.topic{
+    line-height: 40px;
+    color: white;
+}
+
+/* service*/
+
+.servi-info{
+    width: 90%;
+    height: 90px;
+    background: rgb(220, 219, 219);
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.offer-box{
+    width: 70%;
+    
+    background-color: #00171f;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+}
+
+.offer-box-in{
+    width: 50%;
+    color: white;
+    padding: 40px;
+}
+
+/*projects*/
+
+.pro-box{
+    width: 100%;
+    color:white;
+    margin-top: -6px;
+    background-color: #00171f;
+}
+
+.pro-box-in{
+    width: 70%;
+    height: 100%;
+    color:white;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.pro-box-in2{
+    width: 70%;
+    height: 100%;
+    color:white;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+
+
+}
+
+.pro-box-contant{
+    width: 45%;
+   margin-top: 100px;
+    //background: chocolate;
+    color: #f8f8f8;
+}
+
+.pro-text{
+    font-size: 80px; 
+    line-height: 80px;
+}
+
+.bttn-styl{
+    width: 200px;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.50s;
+}
+
+.bttn-styl:hover{
+    transform: scale(0.10s);
+    background: white;
+    color: #00171f;
+    cursor: pointer;
+}
+
+.hed-so{
+    width: 70%;
+    margin: auto;
+   
+   
+    margin-top: 10%;
+}
+
+.pro-about{
+    margin-top: 60PX; 
+    color: black;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 10%;
+}
+
+/* media quary */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   body{
+    //background: cyan;
+   }
+
+   .module{
+    display: none;
+    width: 45%;
+    text-shadow: 0px 0px 5px black;;
+    position: absolute;
+    top: 7%;
+    left: 28%;
+    color: #f8f8f8;
+    text-align: center;
+    }
+    
+    .modd{
+        margin-top: 10%;
+        
+    }
+    
+    .key-feature-box{
+        width: 100%;
+        margin-top: 10%;
+       
+    }
+    .nnn{
+        display: none;
+    }
+
+    .key-add{
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 7px;
+    }
+
+    .mod-img{
+        width: 100%;
+        position: absolute;
+        z-index: -3;
+    
+    }
+    
+    .key-head{
+       
+        width: auto;
+        font-size: 10px;
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+        color: #f8f8f8;
+        
+        padding-top: 0px;
+    }
+    
+    .key-contant-box{
+        width: 100%;
+        margin-top: -40px;
+        flex-wrap: flex;
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    .key-contant-box-in{
+        width: 20%;
+        height: 100%;
+        //background: magenta;
+        text-align: center;
+        color: #f8f8f8;   
+    }
+    
+    
+
+    .key-img-box{
+        width: 40%;
+        //background: maroon;
+        margin: auto;  
+        
+    }
+
+    .mod-mech{
+        font-size: 15px; 
+        font-weight: 600; 
+        color: white;
+     }
+    
+    .topic{
+        line-height: 20px;
+        color: white;
+        font-size: 10px;
+    }
+
+
+    /* project */
+
+    .pro-box{
+        width: 100%;
+        color:white;
+        margin-top: -6px;
+        background-color: #00171f;
+    }
+    
+    .pro-box-in{
+        width: 70%;
+        height: 100%;
+        color:white;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+    
+    .pro-box-in2{
+        width: 70%;
+        height: 100%;
+        color:white;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+    
+    
+    }
+    
+    .pro-box-contant{
+        width: 45%;
+        font-size: 12px;
+        margin-top: 30px;
+        //background: chocolate;
+        color: #f8f8f8;
+    }
+
+    .pro-about{
+        margin-top:-40PX; 
+        font-size: 10px;
+        color: black;
+    }
+    
+    .pro-text{
+        font-size: 25px; 
+        line-height: 40px;
+        margin-top: 50px;
+    }
+
+    .ggg{
+        margin-left: -150px;
+    }
+    
+    
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        //background: pink;
+       }
+    
+       .module{
+        display: none;
+        width: 45%;
+        text-shadow: 0px 0px 5px black;;
+        position: absolute;
+        top: 7%;
+        left: 28%;
+        color: #f8f8f8;
+        text-align: center;
+        }
+        
+        .modd{
+            margin-top: 10%;
+            
+        }
+        
+        .key-feature-box{
+            width: 100%;
+            margin-top: 10%;
+           
+        }
+        .nnn{
+            display: none;
+        }
+    
+        .key-add{
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 7px;
+        }
+    
+        .mod-img{
+            width: 100%;
+            position: absolute;
+            z-index: -3;
+        
+        }
+        
+        .key-head{
+           
+            width: auto;
+            font-size: 10px;
+            margin: auto;
+            text-align: center;
+            text-transform: uppercase;
+            color: #f8f8f8;
+            
+            padding-top: 15px;
+        }
+        
+        .key-contant-box{
+            width: 100%;
+            margin-top: -40px;
+            flex-wrap: flex;
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        
+        .key-contant-box-in{
+            width: 20%;
+            height: 100%;
+            //background: magenta;
+            text-align: center;
+            color: #f8f8f8;   
+        }
+        
+        
+    
+        .key-img-box{
+            width: 40%;
+            //background: maroon;
+            margin: auto;  
+            
+        }
+    
+        .mod-mech{
+            font-size: 15px; 
+            font-weight: 600; 
+            color: white;
+         }
+        
+        .topic{
+            line-height: 25px;
+            color: white;
+            font-size: 12px;
+        }
+
+        /* project */
+
+    .pro-box{
+        width: 100%;
+        color:white;
+        margin-top: -6px;
+        background-color: #00171f;
+    }
+    
+    .pro-box-in{
+        width: 70%;
+        height: 100%;
+        color:white;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+    
+    .pro-box-in2{
+        width: 70%;
+        height: 100%;
+        color:white;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+    
+    
+    }
+    
+    .pro-box-contant{
+        width: 45%;
+        font-size: 15px;
+        margin-top: 30px;
+        //background: chocolate;
+        color: #f8f8f8;
+    }
+
+    .pro-about{
+        margin-top:-40PX; 
+        font-size: 15px;
+        color: black;
+    }
+    
+    .pro-text{
+        font-size: 30px; 
+        line-height: 40px;
+        margin-top: 50px;
+    }
+
+    .ggg{
+        margin-left: -120px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        //background: orange;
+       }
+    
+       .module{
+        display: block;
+        width: 50%;
+        text-shadow: 0px 0px 5px black;;
+        position: absolute;
+        top: 15%;
+        left: 28%;
+        color: #f8f8f8;
+        text-align: center;
+        }
+
+        .mod-dis{
+         font-size: 20px;
+        }
+
+        .mod-para{
+            font-size: 12px;
+        }
+
+        .our-mod{
+          font-size: 25px;
+        }
+        
+        .modd{
+            margin-top: 10%;
+            
+        }
+        
+        .key-feature-box{
+            width: 100%;
+            margin-top: 10%;
+           
+        }
+        .nnn{
+            display: block;
+            font-size: 12px;
+        }
+    
+        .key-add{
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 7px;
+        }
+    
+        .mod-img{
+            width: 100%;
+            position: absolute;
+            z-index: -3;
+        
+        }
+        
+        .key-head{
+           
+            width: auto;
+            font-size: 10px;
+            margin: auto;
+            text-align: center;
+            text-transform: uppercase;
+            color: #f8f8f8;
+            
+            padding-top: 15px;
+        }
+        
+        .key-contant-box{
+            width: 100%;
+            margin-top: -40px;
+            flex-wrap: flex;
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        
+        .key-contant-box-in{
+            width: 20%;
+            height: 100%;
+            //background: magenta;
+            text-align: center;
+            color: #f8f8f8;   
+        }
+        
+        
+    
+        .key-img-box{
+            width: 40%;
+            //background: maroon;
+            margin: auto;  
+            
+        }
+    
+        .mod-mech{
+            font-size: 15px; 
+            font-weight: 600; 
+            color: white;
+         }
+        
+        .topic{
+            line-height: 25px;
+            color: white;
+            font-size: 12px;
+        }
+
+        /* project */
+    
+    .pro-box-contant{
+        width: 45%;
+        font-size: 15px;
+        margin-top: 30px;
+        //background: chocolate;
+        color: #f8f8f8;
+    }
+
+    .pro-about{
+        margin-top:-40PX; 
+        font-size: 15px;
+        color: black;
+    }
+    
+    .pro-text{
+        font-size: 45px; 
+        line-height: 60px;
+        margin-top: 50px;
+    }
+
+    .ggg{
+        margin-left: -100px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+       //background: yellow;
+       }
+    
+       .module{
+        display: block;
+        width: 50%;
+        text-shadow: 0px 0px 5px black;;
+        position: absolute;
+        top: 20%;
+        left: 28%;
+        color: #f8f8f8;
+        text-align: center;
+        }
+
+        .mod-dis{
+         font-size: 25px;
+        }
+
+        .mod-para{
+            font-size: 15px;
+        }
+
+        .our-mod{
+          font-size: 35px;
+        }
+        
+        .modd{
+            margin-top: 10%;
+            
+        }
+        
+        .key-feature-box{
+            width: 100%;
+            margin-top: 10%;
+           
+        }
+        .nnn{
+            display: block;
+            font-size: 15px;
+        }
+    
+        .key-add{
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 7px;
+        }
+    
+        .mod-img{
+            width: 100%;
+            position: absolute;
+            z-index: -3;
+        
+        }
+        
+        .key-head{
+           
+            width: auto;
+            font-size: 15px;
+            margin: auto;
+            text-align: center;
+            text-transform: uppercase;
+            color: #f8f8f8;
+            
+            padding-top: 15px;
+        }
+        
+        .key-contant-box{
+            width: 100%;
+            margin-top: -40px;
+            flex-wrap: flex;
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        
+        .key-contant-box-in{
+            width: 20%;
+            height: 100%;
+            //background: magenta;
+            text-align: center;
+            color: #f8f8f8;   
+        }
+        
+        
+    
+        .key-img-box{
+            width: 40%;
+            //background: maroon;
+            margin: auto;  
+            
+        }
+    
+        .mod-mech{
+            font-size: 25px; 
+            font-weight: 600; 
+            color: white;
+         }
+        
+        .topic{
+            line-height: 35px;
+            color: white;
+            font-size: 15px;
+        }
+
+         /* project */
+    
+    .pro-box-contant{
+        width: 45%;
+        font-size: 15px;
+        margin-top: 30px;
+        //background: chocolate;
+        color: #f8f8f8;
+    }
+
+    .pro-about{
+        margin-top:-40PX; 
+        font-size: 15px;
+        color: black;
+    }
+    
+    .pro-text{
+        font-size: 55px; 
+        line-height: 60px;
+        margin-top: 50px;
+    }
+
+    .ggg{
+        margin-left: -100px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        //background-color: orange;
+    }
+    .module{
+        width: 45%;
+        text-shadow: 0px 0px 5px black;;
+        position: absolute;
+        top: 27%;
+        left: 28%;
+        color: #f8f8f8;
+        text-align: center;
+        }
+        
+        .our-mod{
+            
+            font-size: 40px;
+            font-weight: 600;
+        }
+        
+        .
+        .key-feature-box{
+            width: 100%;
+            margin-top: 10%;
+           
+        }
+        
+        .mod-img{
+            width: 100%;
+            position: absolute;
+            z-index: -3;
+        
+        }
+        
+        .key-head{
+           
+            width: auto;
+            font-size: 20px;
+            margin: auto;
+            text-align: center;
+            text-transform: uppercase;
+            color: #f8f8f8;
+            padding-top: 35px
+        }
+        
+        .key-contant-box{
+            width: 100%;
+            margin-top: 10px;
+            flex-wrap: flex;
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        
+        .key-contant-box-in{
+            width: 20%;
+            height: 100%;
+            //background: magenta;
+            text-align: center;
+            color: #f8f8f8;   
+        }
+        
+        .key-img-box{
+            width: 40%;
+            //background: maroon;
+            margin: auto;  
+            
+        }
+
+        .mod-mech{
+            font-size: 35px;
+        }
+        
+        .topic{
+            line-height: 40px;
+            color: white;
+        }
+
+      /* project */
+
+      .pro-box-contant{
+        width: 45%;
+        font-size: 15px;
+        margin-top: 30px;
+        //background: chocolate;
+        color: #f8f8f8;
+    }
+
+    .pro-about{
+        margin-top:40PX; 
+        font-size: 17px;
+        color: black;
+    }
+    
+    .pro-text{
+        font-size: 77px; 
+        line-height: 80px;
+        margin-top: 50px;
+    }
+
+    .ggg{
+        margin-left: 5px;
+    }
+    
+}
