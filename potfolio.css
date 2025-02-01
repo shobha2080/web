@@ -1,0 +1,962 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior:smooth;
+    animation:opacity 3s;
+    }
+    
+    @Keyframes opacity{
+        from{ opacity: 0%;}
+        to{opacity: 100%;}
+        }
+    
+
+.bg{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    
+    
+}
+
+.bg2{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    display: none;
+    
+}
+
+
+.main-box{
+    width: 75%;
+    height: 100vh;
+    //background-color: gray;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+
+}
+
+.main-box-in{
+    width: 47%;
+    height: 65%;
+    //background-color: brown;
+    align-content: center;
+}
+
+.llm{
+    width: 80%;
+    margin-left: -100px;
+}
+
+hr{
+    margin-left: 49%;
+    height: 5px;
+    width: 25%;
+    background-color: #fbbb36;
+    border: 0;
+    
+    
+}
+
+#sho-hed{
+    text-align: right;
+    margin-top: 5%;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 5px 1px 0px  black;
+    font-size: 50px;
+    letter-spacing: 3px;
+    
+
+}
+span{
+    -webkit-text-stroke: 1px #d86906;
+    text-shadow: 5px 1px 0px  #d86906;
+}
+
+.hi-text{
+   text-align: right;
+   color: #efbf44; 
+   font-size: 45px;
+}
+
+.text-box{
+    width: 64%;
+    margin-left: 34%;
+    margin-top: 3%;
+    background-color: #fbbb36;
+    padding: 5px;
+}
+
+.para-box{
+    text-align: right;
+    margin-top: 5%;
+}
+
+.more-btn{
+    margin-top: 5%;
+    background-color: black;
+    color: white;
+    width:24%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    margin-left: 68.60%;
+    cursor: pointer;
+    transition: scale 0.2 ease ;
+}
+
+.more-btn:hover{
+    scale: 1.05;
+    background-color: #fbbb36;
+    color: black;
+}
+
+.more-btn:active{
+    scale:0.95
+}
+
+/*first page end*/
+
+.logo-icon{
+   width: 40%;
+   //background-color: #d0cac5;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+ 
+  }
+
+  .logo-icon-in{
+    color: white;
+    background-color: black;
+    padding: 1px 10px;
+    border-radius: 50%;
+    font-size: 35px;
+    
+  }
+
+  .logo-icon-in2{
+    color: white;
+    background-color: black;
+    padding: 1px 8px;
+    border-radius: 50%;
+    font-size: 35px;
+    
+  }
+
+ .inner-icon{
+    color: white;
+    transition: 0.50;
+ }
+ 
+ .inner-icon:hover{
+    color: #fbbb36;
+    transform: scale(0.10s);
+ }
+
+#brrr{
+    display: none;
+}
+
+/*media queries*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body{
+        //background-color: #d86906;
+    }
+
+    .bg{
+        display: none;   
+         
+     }
+
+     .bg2{  
+        display: block; 
+    }
+
+    .main-box{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-box-in{
+        width: 70%;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .llm{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #sho-hed{
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    .hi-text{
+       text-align: center;
+       font-size: 30px;
+    }
+    
+    .text-box{
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        background-color: #fbbb36;
+        padding: 5px;
+        font-size: 15px;
+    }
+    
+    .para-box{
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    .more-btn{
+       width:45%;
+       margin: auto;
+       margin-top: 5%; 
+    }
+    
+    .logo-icon{
+        width: 70%;
+        //margin-top: 55%;
+      
+       }
+     
+       .logo-icon-in{
+         color: white;
+         background-color: black;
+         padding: 1px 10px;
+         border-radius: 50%;
+         font-size: 35px;
+         
+       }
+     
+       .logo-icon-in2{
+         color: white;
+         background-color: black;
+         padding: 1px 8px;
+         border-radius: 50%;
+         font-size: 35px;
+         
+       }
+     
+     #brrr{
+        display: block;
+     }
+      
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        //background: maroon;
+    }
+
+    .bg{
+        display: none;   
+         
+     }
+
+     .bg2{  
+        display: block; 
+    }
+
+    .main-box{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-box-in{
+        width: 70%;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    #sho-hed{
+        text-align: center;
+        font-size: 41px;
+    }
+
+    .llm{
+        width: 90%;
+        margin-left: 0px;
+    }
+    
+    .hi-text{
+       text-align: center;
+       font-size: 35px;
+    }
+    
+    .text-box{
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        background-color: #fbbb36;
+        padding: 5px;
+    }
+    
+    .para-box{
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    .more-btn{
+       width:38%;
+       margin: auto;
+       margin-top: 5%; 
+    }
+    
+    .logo-icon{
+        width: 70%;
+        //margin-top: 57%;
+      
+       }
+     
+     
+    
+       #brrr{
+        display: block;
+     }
+      
+     
+      
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    body{
+        //background: cyan;
+    }
+
+    .bg{
+        display: none;   
+         
+     }
+
+     .bg2{  
+        display: block; 
+    }
+
+    .main-box{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+
+    
+
+    .main-box-in{
+        width: 60%;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    #sho-hed{
+        text-align: center;
+        font-size: 47px;
+    }
+    
+    .hi-text{
+       text-align: center;
+       font-size: 45px;
+       padding-top: 30px;
+    }
+    
+    .text-box{
+        width: 90%;
+        margin: auto;
+        margin-top: 3%;
+        background-color: #fbbb36;
+        padding: 5px;
+    }
+    
+    .para-box{
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    .more-btn{
+       width:38%;
+       margin: auto;
+       margin-top: 5%; 
+    }
+    
+    .logo-icon{
+        width: 70%;
+        //margin-top: 55%;
+      
+       }
+
+       
+     #brrr{
+        display: block;
+     }
+      
+     
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        //background-color: lawngreen;
+    }
+
+    .bg{
+       margin-top: 8%;
+       display: block;
+    }
+    
+    .bg2{
+        display: none;
+        
+    }
+    
+    
+    .main-box{
+        width: 85%;
+        height: 90vh;
+        //background-color: aquamarine;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+    
+    }
+    
+    .main-box-in{
+        width: 47%;
+        height: 65%;
+        padding-top: 0px;
+        //background-color: brown;
+       
+    }
+  
+    #sho-hed{
+        text-align: right;
+        font-size: 39px;
+        letter-spacing: 3px;
+        
+    
+    }
+
+  
+    
+    .hi-text{
+       text-align: right;
+       font-size: 35px;
+    }
+    
+    .text-box{
+        width: 87%;
+        margin-left: 10%;
+        margin-top: 3%;
+        background-color: #fbbb36;
+        padding: 5px;
+    }
+    
+    .para-box{
+        text-align: right;
+    }
+    
+    .more-btn{
+        width:32%;
+        margin-left: 58%;
+    }
+    
+    .logo-icon{
+    
+      width: 40%;
+       }
+ 
+     
+       #brrr{
+        display: none;
+     }
+      
+      
+       
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        //background-color: #d86906;
+    }
+
+    .bg{
+        width: 100%;
+        position: absolute;
+        z-index: -2;
+        margin-top: 0%;
+        
+    }
+    
+    .bg2{
+        
+        display: none;
+        
+    }
+    
+    
+    .main-box{
+        width: 75%;
+        height: 92vh;
+        //background-color: gray;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+    
+    }
+    
+    .main-box-in{
+        width: 47%;
+        height: 65%;
+        //background-color: brown;
+        align-content: center;
+    }
+    
+    
+    
+    .llm{
+       margin-left: -100px;
+    }
+    
+    
+   
+    
+    #sho-hed{
+        text-align: right;
+        margin-top: 5%;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        text-shadow: 5px 1px 0px  black;
+        font-size: 50px;
+        letter-spacing: 3px;
+        
+    
+    }
+    
+    .hi-text{
+       text-align: right;
+       color: #efbf44; 
+       font-size: 45px;
+    }
+    
+    .text-box{
+        width: 90%;
+        //margin-left: 34%;
+        margin-top: 3%;
+        background-color: #fbbb36;
+        padding: 5px;
+    }
+    
+    .para-box{
+        text-align: right;
+        margin-top: 5%;
+    }
+    
+    .more-btn{
+        margin-top: 5%;
+        background-color: black;
+        color: white;
+        width:30%;
+        padding: 10px 20px 10px 20px;
+        border-radius: 50px;
+        margin-left: 63%;
+        cursor: pointer;
+        transition: scale 0.2 ease ;
+    }
+
+    .logo-icon{
+    
+      width: 40%;
+       }
+     
+       #brrr{
+        display: none;
+     }
+      
+     .logo-icon-img{
+        margin-left: 10px;
+     }
+      
+}
+
+
+/*
+@media (max-width:1200px){
+   body{
+    background: blue;
+   }
+
+  
+
+.bg{
+   display: block;   
+    
+}
+
+.bg2{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    display: none;
+   
+}
+
+.main-box-in{
+    width: 85%;
+    height: 65%;
+    //background-color: brown;
+    align-content: center;
+}
+
+.hi-text{
+    text-align: right;
+    color: #efbf44; 
+    font-size: 35px;
+    padding-top: 40px;
+ }
+
+
+#sho-hed{
+    text-align: right;
+    font-size: 40px;
+    margin-top: 8%;
+}
+
+.text-box{
+    width: 78%;
+    margin: auto;
+    margin-top: 3%;
+    margin-left: 85px;
+}
+
+.para-box{
+    text-align: right;
+    margin-top: 8%;
+}
+
+.more-btn{
+    margin: auto;
+    margin-top: 8%;
+    width: 30%;
+}
+
+
+
+.git-box{
+    position: absolute;
+    top: 29.50%;
+    left: 17.98%;
+    font-size: 27px;
+}
+    
+
+.git-box2{
+    position: absolute;
+    top: 41.30%;
+    left: 14.40%;
+    font-size: 24px;
+    
+}
+
+.git-box3{
+    position: absolute;
+    top: 54.15%;
+    left: 14.40%;
+    font-size: 24px;
+    
+}
+
+.git-box4{
+    position: absolute;
+    top: 66%;
+    left: 18.20%;
+    font-size: 20px;
+    
+}
+ }
+
+ @media (max-width:991px){
+    body{
+        background: pink;
+       }
+
+       .main-box{
+        //background: gray;
+        flex-direction: column;
+        padding-top: 50px;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .bg{
+       display: none;   
+        
+    }
+
+    .bg2{
+        width: 100%;
+        position: absolute;
+        z-index: -2;
+        display: block;
+       
+    }
+
+    .main-box-in{
+        width: 85%;
+        height: 65%;
+        //background-color: brown;
+        align-content: center;
+    }
+
+    .hi-text{
+        text-align: center;
+        color: #efbf44; 
+        font-size: 35px;
+        padding-top: 40px;
+     }
+    
+    
+    #sho-hed{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 8%;
+    }
+    
+    .text-box{
+        width: %;
+        margin: auto;
+        margin-top: 3%;
+    }
+    
+    .para-box{
+        text-align: center;
+        margin-top: 8%;
+    }
+    
+    .more-btn{
+        margin: auto;
+        margin-top: 8%;
+        width: 25%;
+    }
+    
+    
+    
+    .git-box{
+        position: absolute;
+        top: 16.30%;
+        left: 27%;
+        font-size: 27px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    
+    .git-box2{
+        position: absolute;
+        top: 30.10%;
+        left: 21%;
+        font-size: 24px;
+        background-color: black;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 50%;
+    }
+    
+    .git-box3{
+        position: absolute;
+        top: 45.50%;
+        left: 21%;
+        font-size: 24px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    
+    .git-box4{
+        position: absolute;
+        top: 59%;
+        left: 27.20%;
+        font-size: 20px;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 50%;
+        background-color: black;
+    }
+ }
+
+ @media (max-width:768px){
+    body{
+        background: cyan;
+       }
+
+       .main-box{
+        //background: gray;
+        flex-direction: column;
+        padding-top: 50px;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .bg{
+       display: none;   
+        
+    }
+
+    .bg2{
+        width: 100%;
+        position: absolute;
+        z-index: -2;
+        display: block;
+       
+    }
+
+    .main-box-in{
+        width: 85%;
+        height: 65%;
+        //background-color: brown;
+        align-content: center;
+    }
+
+    .hi-text{
+        text-align: center;
+        color: #efbf44; 
+        font-size: 35px;
+        padding-top: 40px;
+     }
+    
+    
+    #sho-hed{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 8%;
+    }
+    
+    .text-box{
+        width: 83%;
+        margin: auto;
+        margin-top: 3%;
+    }
+    
+    .para-box{
+        text-align: center;
+        margin-top: 8%;
+    }
+    
+    .more-btn{
+        margin: auto;
+        margin-top: 8%;
+        width: 30%;
+    }
+    
+    
+    
+    .git-box{
+        position: absolute;
+        top: 14.40%;
+        left: 27.65%;
+        font-size: 23px;
+        
+    }
+    
+    .git-box2{
+        position: absolute;
+        top: 25.70%;
+        left: 21.60%;
+        font-size: 20px;
+       
+    }
+    
+    .git-box3{
+        position: absolute;
+        top: 37.90%;
+        left: 21.60%;
+        font-size: 20px;
+    }
+    
+    .git-box4{
+        position: absolute;
+        top: 48.60%;
+        left: 27.80%;
+        font-size: 20px;
+        
+    }
+    
+    
+    
+ 
+  }
+
+  @media (max-width:400px){
+    body{
+        background: lightcoral;
+       }
+
+       
+ 
+  }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

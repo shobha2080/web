@@ -1,267 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-  </head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins';
-  text-decoration: none;
-}
-body{
-        background: #101630;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="potfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
 
 
-html{
-  scroll-behavior:smooth;
-  animation:opacity 3s;
-  }
-  
-  @Keyframes opacity{
-      from{ opacity: 0%;}
-      to{opacity: 100%;}
-      }
-
-
-      nav{
-  width: 100%;
-  padding: 12px 0;
-  //background: #ecf0f3;
- 
-}
-nav .menu{
-  max-width: 1270px;
-  margin: auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu .logo a{
-  font-size: 28px;
-  font-weight: 600;
-  text-decoration: none;
-  position: relative;
-  color: #e3e5f2;
-}
-.menu ul{
-  list-style: none;
-  display: flex;
-  padding-top: 10px;
- 
-}
-.menu ul a{
-  margin:0 15px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #f6f7fa;
-  font-weight: 400;
-  display: inline-flex;
-  padding: 0px 15px;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-    a:before,
-    a:after{
-    content:"";
-    position:absolute;
-    height:3px;
-    width:0%;
-    background-color:#18f08b;
-    transition:0.5s;
-    }
-    
-    
-    a:after{
-    left:0;
-    bottom:-10px;
-    }
-    
-    a:before{
-    right:0;
-    top:-10px;
-    }
-    
-   .menu ul a:hover{
-    color:#18f08b;
-    
-    }
-    
-    a:hover:after,
-    a:hover:before{
-     
-    width:100%;
-    }
-
-
-
-nav label.bttn{
-  color: #fdfdfe;
-  font-size: 18px;
-  position: relative;
-  cursor: pointer;
-  display: none;
-}
-nav label.cancel{
-  position: absolute;
-  top: 25px;
-  right: 30px;
-}
-#check{
-  display: none;
-}
-
-
-.main-box{
-  width: 70%;
-  //height: 500px;
- //background-color: pink;
-  margin:auto;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.main-box-in{
-  width: 48%;
-  //height: 100%;
-  //background-color: orange;
- 
-}
-
-
-.img-sh{
-  width: 65%;
- padding-top: 90px;
- margin-left: 85px;
-}
-
-.p{
-        color: #ffffff;
-        margin-top: 145px;
-        //font-size: 25px;
-    }  
-
-
-
-
-@media (max-width:940px) {
-  .menu ul{
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    max-width: 400px;
-    padding-top: 45px;
-    height: 100%;
-    background: #00171f;
-    box-shadow: 0 5px 10px #b0b0b5;
-    z-index: 12;
-    transition: all 0.3s ease;
-  }
-  .menu ul a{
-   display: block;
-   font-size: 23px;
-   width: 40%;
-   margin-top: 30px;
-   margin-left: 130px;
-   box-shadow: none;
-   text-align: center;
-  }
-  .menu ul a:hover:before{
-    box-shadow: none;
-  }
-  nav label.bars{
-    display: block;
-  }
-  #check:checked ~ label.bars{
-    display: none;
-  }
-  #check:checked ~ ul label.cancel{
-    display: block;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-  .main-box {
-    margin-top: -40px;
-    flex-direction: column;
-  }
-
-  .main-box-in{
-  width: 100%;
-  
- 
-}
-
-
-.img-sh{
-  width: 75%;
- padding-top: 90px;
- margin-left: 40px;
-}
-
-.p{
-        color: #ffffff;
-        margin-top: 40px;
-        //font-size: 25px;
-    }  
-}
-   
-  </style>
-  <body>
-    <nav>
-      <div class="menu">
-          <input type="checkbox" id="check">
-          <div class="logo"></div>
-          <ul>
-              <label class="bttn cancel" for="check"><i class="fas fa-times"></i></label>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="daliy.html">Daily Assignments</a></li>
-              <li><a href="web.html">Websites</a></li>
-              <li><a href="mobile.html">Mobile Apps</a></li>
-              
-
-
-          </ul>
-
-          
-
-          <label for="check" class="bttn bars"><i class="fas fa-bars"></i></label>
-
-      </div>
-      </div>
-  </nav>
-
-
-  <div class="main-box">
-    <div class="main-box-in">
-      <img src="images/shobha-01.png" class="img-sh">
+<body>
+    <div class="bg">
+      <img src="images/bg.png" width="100%">
     </div>
-    <div class="main-box-in" style="background-color:;">
-      <p class="p">I'm <b>SHOBHA SHAH</b>, a passionate web design student eager to make a positive impact in the digital world. With a keen eye for aesthetics and a strong foundation in web development, I'm dedicated to crafting visually appealing and user-friendly websites.</p><br/>
-      <P style="color: white;">I'm always eager to learn and grow as a web designer. I'm confident in my skills and excited to contribute my talents to a dynamic and innovative team.</P>
 
-      <br/>
+    <div class="bg2">
+        <img src="images/bg2.png" width="100%">
+      </div>
+
+    <div class="main-box">
+        <div class="main-box-in">
+            <img src="images/shobhashah-01-01-01.png" class="llm">
+        </div>
+
+        <div class="main-box-in" style="background-color:;">
+            <h1 class="hi-text">HI THERE!</h1>
+            <hr/>
+
+            <div><h1 id="sho-hed">I'M<span> SHOBHA SHAH </span></h1></div>
+
+            <div class="text-box"><p>Student of Web Designing & Development</p></div>
+
+            <div><p class="para-box">Hi, I'm Shobha Shah, a passionate student of web design and development. I love creating visually appealing and functional websites that provide great user experiences. I'm always eager to learn new technologies and improve my skills in the ever-evolving world of web development.</p></div>
+
+            <a href="next.html"><div class="more-btn">MORE ABOUT ME</div></a> 
+        </div>
+ 
     </div>
-  </div>
-    
-   
-  </body>
+    <br/ id="brrr">
 
-  
+    <div class="logo-icon">
+
+        <div class="logo-icon-in">
+            <a href="https://shobha2080.github.io/web/" class="inner-icon"><div class="icon-div"><i class="fa-brands fa-github"></i></div></a> 
+
+        </div>
+
+        <div class="logo-icon-in2">
+            <a href="next.html"  class="inner-icon"><div class="icon-div"><i class="fa-brands fa-bootstrap"></i></div></a> 
+
+        </div>
+
+        <div class="logo-icon-in2">
+            <a href="https://www.behance.net/shobhashah1" class="inner-icon"><div class="icon-div"><i class="fa-brands fa-behance"></i></div></a> 
+
+        </div>
+
+        <div class="logo-icon-in">
+            <a href="#" class="inner-icon"><div class="icon-div"><i class="fa-solid fa-envelope"></i></div></a> 
+
+        </div>
+
+ 
+    </div>
+    
+</body>
 </html>
