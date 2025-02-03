@@ -140,9 +140,13 @@
                 <a href="div.html" class="image html/css">
                     <h2>div</h2>
                 </a>
+
+                
                 <a href="bookmark.html" class="image html">
                     <h2>book mark</h2>
                 </a>
+
+
                 <a href="table work.html" class="image html">
                     <h2>table</h2>
                 </a>
@@ -585,9 +589,9 @@
 
                 $(this).addClass('active').siblings().removeClass('active');
 
-                var filter = $(this).attr('data-filter')
+               var filter = $(this).attr('data-filter')
 
-                if (filter == 'all') {
+               if (filter == 'all') {
                     $('.image').show(400);
                 } else {
                     $('.image').not('.' + filter).hide(200);
@@ -596,10 +600,10 @@
 
             });
 
-            $('.gallery').magnificPopup({
+            $('.image')({
 
                 delegate: 'a',
-                type: 'image',
+                type: 'page',
                 gallery: {
                     enabled: true
                 }
