@@ -159,6 +159,7 @@ html{
   color: #fff;
   text-shadow: 0 5px 10px #0004;
   backround: #000;
+  font-size: 75px;
    }
 
    .part{
@@ -200,6 +201,7 @@ html{
    color: #fff;
    text-shadow: 0 5px 10px #0004;
    margin-top:-20%;
+   font-size: 70px;
    }
 
    .explor2{
@@ -317,3 +319,1245 @@ html{
     
    
   }
+
+
+
+   /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+header{
+   
+    max-width: 105%;
+   
+    
+   }
+
+  header a{
+    
+    font-size: 12px;
+    margin-right: 00px;
+    padding: 10px 20px;
+   
+   }
+
+   .explor{
+    width:100%;
+   }
+
+   .explor-text{
+
+  top: 25%;
+  font-size: 12px;
+  max-width: 80%;
+  left: 25%;
+
+   }
+
+    .plan{
+    width: 80%;
+    heiht: 800px;
+    backround: tan;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+  
+
+   .plan-small{
+    width: 100%;
+    heiht: 400px;
+    backround: yellowgreen;
+    margin-top: 150px;
+   }
+
+   .part-text2{
+    margin-top: 0px;
+    color: #45553d;
+   
+   }
+
+   .part-para2{
+    margin-top: 20px;
+    line-height: 30px;
+   }
+
+   .location{
+    width: 100%;
+    height: 800px;
+    //background: gray;
+    margin-top: 150px;
+    text-align: center;
+   
+  }
+
+  .loc{
+    width:100%;
+    color: #45553d;
+    font-size: 65px;
+    padding: 50px 0px;
+  }
+
+  .loc-in{
+    width: 100%;
+   
+    
+  }
+
+
+
+
+
+
+  
+   .top-img{
+    width: 80%;
+    height: 450px;
+   
+   }
+
+   .text{
+    
+    font-size: 40px;
+   
+   }
+
+   .youth{
+    width: 80%;
+    height: 240px;
+    backround: gray;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+   .youth-in{
+    width: 100%;
+    height: 100%;
+    backround: yellow;
+
+   }
+
+   .youth-in3{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    
+
+   }
+
+   .youth-in3 h2{
+   padding-top: 450px;
+
+   }
+
+   #text2{
+    margin-top: 0px;
+    margin-left: 0px;
+   
+   }
+
+   #para{
+    margin-top: 20px;
+    margin-left: 0px;
+    
+   }
+
+
+   .more{
+    width: 80%;
+    height: 400px;
+    backround: gray;
+    margin: auto;
+    margin-top: 700px;
+    
+   }
+
+   .more-hed{
+    width: 100%;
+    backround: greenyellow;
+   }
+
+   .more-in{
+    width: 100%;
+    height: 900px;
+    backround: yellow;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+
+   .more-in-in{
+    width: 45%;
+    height: 60%;
+    backround: pink;
+    padding-left: 0px;
+   }
+ .up{
+    width: 80%;
+    hight: 300px;
+    backround: gray;
+    margin: auto;
+    margin-top: 800px;
+ }
+
+
+
+
+
+
+  .part{
+    width: 80%;
+    heiht: 1000px;
+    backround: gray;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+   }
+
+   .part-in{
+    width: 100%;
+    heiht: 460px;
+    backround: cyan;
+    padding-bottom: 100px;
+    
+   }
+
+   .part-text{
+    margin-top: 10px;
+    color: #45553d;
+   }
+
+   .part-para{
+    margin-top: 30px;
+    line-height: 20px;
+   }
+
+   .wood{
+    position: absolute;
+    //top: 5%;
+   width: 1140px;
+   max-width: 80%;
+   left: 25%;
+   padding-right: 30%;
+   box-sizing: border-box;
+   color: #fff;
+   text-shadow: 0 5px 10px #0004;
+   margin-top:-25%;
+   font-size:20px;
+   }
+
+   .explor2{
+    width:100%;
+    margin-top: 50px;
+   }
+
+  
+
+
+
+
+ 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  body{
+    background-color: cyan;
+  }
+  header{
+   
+    max-width: 100%;
+   
+    
+   }
+
+  header a{
+    
+    font-size: 15px;
+    margin-right: 0px;
+   
+   
+   }
+
+    .explor{
+    width:100%;
+   }
+
+   .explor-text{
+
+  top: 30%;
+font-size: 22px;
+  max-width: 80%;
+  left: 35%;
+
+   }
+
+    .plan{
+    width: 80%;
+    heiht: 800px;
+    backround: tan;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+  
+
+   .plan-small{
+    width: 100%;
+    heiht: 400px;
+    backround: yellowgreen;
+    margin-top: 150px;
+   }
+
+   .part-text2{
+    margin-top: 0px;
+    color: #45553d;
+   
+   }
+
+   .part-para2{
+    margin-top: 20px;
+    line-height: 30px;
+   }
+
+   .location{
+    width: 100%;
+    height: 800px;
+    //background: gray;
+    margin-top: 150px;
+    text-align: center;
+   
+  }
+
+  .loc{
+    width:100%;
+    color: #45553d;
+    font-size: 65px;
+    padding: 50px 0px;
+  }
+
+  .loc-in{
+    width: 100%;
+   
+    
+  }
+
+
+
+
+
+  .top-img{
+    width: 80%;
+    height: 450px;
+   
+   }
+
+   .text{
+    
+    font-size: 40px;
+   
+   }
+
+   .youth{
+    width: 80%;
+    height: 240px;
+    backround: gray;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+   .youth-in{
+    width: 100%;
+    height: 100%;
+    backround: yellow;
+
+   }
+
+   .youth-in3{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    
+
+   }
+
+   .youth-in3 h2{
+   padding-top: 580px;
+
+   }
+
+   #text2{
+    margin-top: 100px;
+    margin-left: 0px;
+   
+   }
+
+   #para{
+    margin-top: 20px;
+    margin-left: 0px;
+    
+   }
+
+
+
+
+
+
+   .more{
+    width: 80%;
+    height: 400px;
+    backround: gray;
+    margin: auto;
+    margin-top: 900px;
+    
+   }
+
+   .more-hed{
+    width: 100%;
+    backround: greenyellow;
+   }
+
+   .more-in{
+    width: 100%;
+    height: 700px;
+    backround: yellow;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+
+   .more-in-in{
+    width: 45%;
+    height: 60%;
+    backround: pink;
+    padding-left: 0px;
+   }
+ .up{
+    width: 80%;
+    hight: 300px;
+    backround: gray;
+    margin: auto;
+    margin-top: 600px;
+ }
+
+
+
+
+ .part{
+    width: 80%;
+    heiht: 1000px;
+    backround: gray;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+   }
+
+   .part-in{
+    width: 100%;
+    heiht: 460px;
+    backround: cyan;
+    padding-bottom: 100px;
+    
+   }
+
+   .part-text{
+    margin-top: 10px;
+    color: #45553d;
+   }
+
+   .part-para{
+    margin-top: 30px;
+    line-height: 20px;
+   }
+
+   .wood{
+    position: absolute;
+    //top: 5%;
+   width: 1140px;
+   max-width: 80%;
+   left: 25%;
+   padding-right: 30%;
+   box-sizing: border-box;
+   color: #fff;
+   text-shadow: 0 5px 10px #0004;
+   margin-top:-25%;
+   font-size:30px;
+   }
+
+   .explor2{
+    width:100%;
+    margin-top: 50px;
+   }
+
+  
+   
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+  body{
+    background-color: rgb(114, 12, 90);
+  }
+  header{
+   
+    max-width: 100%;
+   
+    
+   }
+
+  header a{
+    
+    font-size: 15px;
+    margin-right: 40px;
+   
+   
+   }
+
+    .explor{
+    width:100%;
+   }
+
+   .explor-text{
+
+  top: 40%;
+font-size: 31px;
+  max-width: 80%;
+  left: 30%;
+
+   }
+
+    .plan{
+    width: 80%;
+    heiht: 800px;
+    backround: tan;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+  
+
+   .plan-small{
+    width: 50%;
+    heiht: 400px;
+    backround: yellowgreen;
+    margin-top: 150px;
+   }
+
+   .part-text2{
+    margin-top: 0px;
+    color: #45553d;
+   
+   }
+
+   .part-para2{
+    margin-top: 20px;
+    line-height: 30px;
+   }
+
+   .location{
+    width: 100%;
+    height: 1100px;
+    //background: gray;
+    margin-top: 150px;
+    text-align: center;
+   
+  }
+
+  .loc{
+    width:100%;
+    color: #45553d;
+    font-size: 65px;
+    padding: 50px 0px;
+  }
+
+  .loc-in{
+    width: 100%;
+   
+    
+  }
+
+    #fff{
+    position: absolute;
+    backround: pink;
+    margin-top: 70px;
+    margin-left: 200px;
+
+    }
+
+
+
+
+
+
+    .top-img{
+    width: 80%;
+    height: 450px;
+   
+   }
+
+   .text{
+    
+    font-size: 40px;
+   
+   }
+
+   .youth{
+    width: 80%;
+    height: 240px;
+    backround: gray;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+   .youth-in{
+    width: 100%;
+    height: 100%;
+    backround: yellow;
+    padding-top: 100px;
+
+   }
+
+   .youth-in3{
+    width: 100%;
+    height: 100%;
+    margin-top: 230px;
+    
+
+   }
+
+   .youth-in3 h2{
+   padding-top: 800px;
+
+   }
+
+   #text2{
+    margin-top: 350px;
+    margin-left: 0px;
+   
+   }
+
+   #para{
+    margin-top: 20px;
+    margin-left: 0px;
+    
+   }
+
+
+   .more{
+    width: 80%;
+    height: 400px;
+    backround: gray;
+    margin: auto;
+    margin-top: 1200px;
+    
+   }
+
+   .more-hed{
+    width: 100%;
+    backround: greenyellow;
+   }
+
+   .more-in{
+    width: 100%;
+    height: 700px;
+    backround: yellow;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+
+   .more-in-in{
+    width: 33%;
+    height: 60%;
+    backround: pink;
+    padding-left: 0px;
+   }
+ .up{
+    width: 80%;
+    hight: 300px;
+    backround: gray;
+    margin: auto;
+    margin-top: 500px;
+ }
+
+
+
+
+
+
+ 
+
+
+
+ .part{
+    width: 80%;
+    heiht: 1000px;
+    backround: gray;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+   }
+
+   .part-in{
+    width: 100%;
+    heiht: 460px;
+    backround: cyan;
+    padding-bottom: 100px;
+    
+   }
+
+   .part-text{
+    margin-top: 10px;
+    color: #45553d;
+   }
+
+   .part-para{
+    margin-top: 30px;
+    line-height: 20px;
+   }
+
+   .wood{
+    position: absolute;
+    //top: 5%;
+   width: 1140px;
+   max-width: 80%;
+   left: 25%;
+   padding-right: 30%;
+   box-sizing: border-box;
+   color: #fff;
+   text-shadow: 0 5px 10px #0004;
+   margin-top:-25%;
+   font-size:40px;
+   }
+
+   .explor2{
+    width:100%;
+    margin-top: 50px;
+   }
+
+
+   
+   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  body{
+    background-color: rgb(53, 89, 18);
+  }
+
+  header a{
+    
+    font-size: 15px;
+    margin-right: 60px;
+   
+   
+   }
+  .explor{
+    width:100%;
+   }
+
+   .explor-text{
+
+  top: 48%;
+font-size: 35px;
+  max-width: 80%;
+  left: 30%;
+
+   }
+
+    .plan{
+    width: 60%;
+    heiht: 800px;
+    backround: tan;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+  
+
+   .plan-small{
+    width: 30%;
+    heiht: 400px;
+    backround: yellowgreen;
+    margin-top: 150px;
+   }
+
+   .part-text2{
+    margin-top: 50px;
+    color: #45553d;
+   
+   }
+
+   .part-para2{
+    margin-top: 20px;
+    line-height: 30px;
+   }
+
+   .location{
+    width: 100%;
+    height: 900px;
+    //background: gray;
+    margin-top: 150px;
+    text-align: center;
+   
+  }
+
+  .loc{
+    width:100%;
+    color: #45553d;
+    font-size: 65px;
+    padding: 50px 0px;
+  }
+
+  .loc-in{
+    width: 40%;
+   
+    
+  }
+
+    #fff{
+    position: absolute;
+    backround: pink;
+    margin-top: -280px;
+    margin-left: 470px;
+
+    }
+
+
+
+
+
+
+
+
+  .top-img{
+    width: 60%;
+    height: 450px;
+   
+   }
+
+   .text{
+    
+    font-size: 40px;
+   
+   }
+
+   .youth{
+    width: 60%;
+    height: 240px;
+    backround: gray;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+   .youth-in{
+    width: 42%;
+    height: 100%;
+    backround: yellow;
+    //padding-top: 100px;
+
+   }
+.youth-in2{
+    width: 57%;
+    height: 100%;
+    backround: yellow;
+
+   }
+
+   .youth-in3{
+    width: 55%;
+    height: 100%;
+    margin-top: 0px;
+    
+
+   }
+
+   .youth-in3 h2{
+   padding-top: 40px;
+
+   }
+
+   .youth-in3 p{
+    font-size: 13px;
+   }
+
+   #text2{
+     margin-top: 100px;
+    margin-left: 30px;
+
+   
+   }
+
+   #para{
+     margin-top: 20px;
+    margin-left: 30px;
+    font-size: 13px;
+   }
+
+
+
+
+
+
+   .more{
+    width: 60%;
+    height: 400px;
+    backround: gray;
+    margin: auto;
+    margin-top: 100px;
+    
+   }
+
+   .more-hed{
+    width: 100%;
+    backround: greenyellow;
+   }
+
+   .more-in{
+    width: 100%;
+    height: 90px;
+    backround: yellow;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+
+   .more-in-in{
+    width: 24%;
+    height: 100%;
+    backround: pink;
+    padding-left: 50px;
+   }
+ .up{
+    width: 60%;
+    hight: 300px;
+    backround: gray;
+    margin: auto;
+    margin-top: 300px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ .part{
+    width: 80%;
+    heiht: 1200px;
+    backround: gray;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+   }
+
+   .part-in{
+    width: 48%;
+    heiht: 460px;
+    backround: cyan;
+    padding-bottom: 0px;
+    
+   }
+
+   .part-text{
+    margin-top: 0px;
+    color: #45553d;
+   }
+
+   .part-para{
+    margin-top: 20px;
+    line-height: 20px;
+   }
+
+   .wood{
+    position: absolute;
+    //top: 5%;
+   width: 1140px;
+   max-width: 80%;
+   left: 25%;
+   padding-right: 30%;
+   box-sizing: border-box;
+   color: #fff;
+   text-shadow: 0 5px 10px #0004;
+   margin-top:-25%;
+   font-size:50px;
+   }
+
+   .explor2{
+    width:100%;
+    margin-top: 50px;
+   }
+
+
+  
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+  body{
+    //background-color: rgb(104, 80, 7);
+  }
+
+   header{
+   
+    max-width: 100%;
+   
+    
+   }
+
+  header a{
+    
+    font-size: 18px;
+    margin-right: 50px;
+   
+   
+   }
+
+   .explor-text{
+  
+  left: 35%;
+
+  
+   }
+
+   .explor-text h1{
+     font-size: 72px;
+   }
+
+    .button2 button{
+      margin-left: 0px;
+    }
+
+   .location{
+    width: 100%;
+    height: 900px;
+    //background: gray;
+    margin-top: 150px;
+    text-align: center;
+   
+  }
+
+  .loc{
+    width:100%;
+    color: #45553d;
+    font-size: 65px;
+    padding: 50px 0px;
+  }
+
+  .loc-in{
+    width: 40%;
+   
+    
+  }
+
+     #fff{
+    position: absolute;
+    backround: pink;
+    margin-top: -280px;
+    margin-left: 700px;
+    
+   
+  }
+
+
+  .youth{
+    width: 60%;
+    height: 240px;
+    backround: gray;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .youth-in{
+    width: 42%;
+    height: 100%;
+    backround: yellow;
+
+   }
+
+   .youth-in2{
+    width: 57%;
+    height: 100%;
+    backround: yellow;
+
+   }
+
+   #text2{
+    margin-top: 70px;
+    margin-left: 30px;
+   }
+
+   #para{
+    margin-top: 20px;
+    margin-left: 30px;
+   }
+
+   .more{
+    width: 60%;
+    height: 400px;
+    backround: gray;
+    margin: auto;
+    margin-top: 100px;
+    
+   }
+
+   .more-hed{
+    width: 100%;
+    backround: greenyellow;
+   }
+
+   .more-in{
+    width: 100%;
+    height: 90%;
+    backround: yellow;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .more-in-in{
+    width: 24%;
+    height: 100%;
+    backround: pink;
+    padding-left: 50px;
+   }
+ .up{
+    width: 60%;
+    hight: 300px;
+    backround: gray;
+    margin: auto;
+    margin-top: 60px;
+ }
+
+
+
+
+
+
+  .top-img{
+    width: 60%;
+    height: 550px;
+   
+   }
+
+   .text{
+    
+    font-size: 40px;
+   
+   }
+
+
+
+
+
+
+
+
+
+
+ .part{
+    width: 80%;
+    heiht: 1200px;
+    backround: gray;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+   }
+
+   .part-in{
+    width: 48%;
+    heiht: 460px;
+    backround: cyan;
+    padding-bottom: 0px;
+    
+   }
+
+   .part-text{
+    margin-top: 60px;
+    color: #45553d;
+   }
+
+   .part-para{
+    margin-top: 20px;
+    line-height: 20px;
+   }
+
+   .wood{
+    position: absolute;
+    //top: 5%;
+   width: 1140px;
+   max-width: 80%;
+   left: 25%;
+   padding-right: 30%;
+   box-sizing: border-box;
+   color: #fff;
+   text-shadow: 0 5px 10px #0004;
+   margin-top:-25%;
+   font-size:70px;
+   }
+
+   .explor2{
+    width:100%;
+    margin-top: 50px;
+   }
+   
+
+
+}
+   
